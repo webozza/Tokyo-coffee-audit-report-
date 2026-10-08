@@ -40,6 +40,7 @@ section{margin-top:24px}
 .table-wrap.dragging{cursor:grabbing;user-select:none}
 table{border-collapse:collapse;width:100%;min-width:900px;background:#fff}
 th{background:var(--brown);color:#fff;padding:11px 12px;text-align:left;font-size:11px;text-transform:uppercase;letter-spacing:.04em;position:sticky;top:0}
+td a{color:var(--blue);word-break:break-word}
 td{padding:11px 12px;border-bottom:1px solid #eee5de;vertical-align:top;font-size:13px}
 tr:last-child td{border-bottom:0}
 code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px}
@@ -81,8 +82,6 @@ code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px}
 .issue:first-of-type{border-top:0;padding-top:0;margin-top:0}
 .issue h3{font-family:Georgia,serif;font-size:20px;margin:0 0 6px}
 .issue .status{white-space:normal;line-height:1.35}
-details.urls summary{cursor:pointer;font-weight:700}
-details.urls pre{white-space:pre-wrap;font-size:11px;background:#faf6f1;border:1px solid var(--line);border-radius:10px;padding:12px;max-height:420px;overflow:auto}
 @media(max-width:700px){.dl{grid-template-columns:1fr}.dl dt{padding-top:8px}}
 </style>
 </head>
@@ -228,7 +227,7 @@ details.urls pre{white-space:pre-wrap;font-size:11px;background:#faf6f1;border:1
 <tr><td><strong>Domestic shipping</strong></td><td><span class="status pass">PASS</span></td><td>$4.95 standard shipping; $35+ free shipping; checkout showed 3–5 business days. Re-checked 8 Oct: $19.99 cart → Standard Shipping $4.95; $39.98 cart → Standard Shipping $0.00.</td></tr>
 <tr><td><strong>International shipping</strong></td><td><span class="status pending">PASS (rate estimate)</span></td><td>Canada: USPS First Class International $18.48; UK: $21.95. Re-checked 8 Oct with the same results (First Class Package International). No order was submitted.</td></tr>
 <tr><td><strong>Cart, shipping &amp; checkout</strong></td><td><span class="status pending">CART &amp; SHIPPING VERIFIED — PAYMENT / ORDER COMPLETION NOT TESTED</span></td><td>Checkout flow verified up to the shipping/payment page; no test transaction was submitted. Verified: add to cart, quantity update, cart clear, checkout load, shipping-rate calculation. Not tested: real payment, order creation, order confirmation email, fulfillment routing.</td></tr>
-<tr><td><strong>Broken links / 404</strong></td><td><span class="status pass">PASS</span></td><td>97 checked URLs returned 200 on 7 Oct. 8 Oct re-check: 103 URLs (home, cart, search, contact, 4 policies, 13 collections, 80 products, menu links) — all HTTP 200, no redirects, no 404s. Full list in the Evidence section.</td></tr>
+<tr><td><strong>Broken links / 404</strong></td><td><span class="status pass">PASS</span></td><td>97 checked URLs returned 200 on 7 Oct. 8 Oct re-check: 103 URLs (home, cart, search, contact, 4 policies, 13 collections, 80 products, menu links) — all HTTP 200, no redirects, no 404s.</td></tr>
 <tr><td><strong>Whole Bean / Ground Coffee filter</strong></td><td><span class="status blocked">CLIENT PERMISSION REQUIRED</span></td><td>Storefront currently has Availability + Price only. Re-checked 8 Oct: Shopify Search &amp; Discovery is not in the installed apps list; it was not installed. Tag counts confirmed: Whole Bean 54, Ground Coffee 60.</td></tr>
 <tr><td><strong>WZ Back In Stock</strong></td><td><span class="status pending">WORKING — CLIENT EMAIL CONNECTION PENDING</span></td><td>The app workflow and email delivery were successfully tested using our test sender account. The client’s own store sender email is not connected yet (8 Oct: Manual SMTP selected; SMTP Host, Username and From Address empty). The client needs to connect Gmail or enter their SMTP credentials; after that, one final sender-account confirmation test is needed.</td></tr>
 <tr><td><strong>Inventory sync (live supplier synchronization)</strong></td><td><span class="status pending">LIMITED — NOT VERIFIABLE FROM AVAILABLE INTERFACE</span></td><td>Supplier-linked catalog data remained unchanged. Full Dripshipper product-to-product synchronization mapping could not be independently verified from the available interface. Observed 8 Oct: supplier-linked variants (e.g. Mint, Honduras) hold 999 units each at the “Dripshipper” app location; the three manual Core Four products hold 25 each at the “Tokyo Nights Coffee” location.</td></tr>
@@ -331,6 +330,61 @@ details.urls pre{white-space:pre-wrap;font-size:11px;background:#faf6f1;border:1
       <tbody>
 <tr><td><strong>Core Four — supplier match (Ginza Velvet, Harajuku Heat, Shibuya Sunrise)</strong><br><span class="status blocked">NOT VERIFIED FROM AVAILABLE SOURCES</span></td><td>Dripshipper app catalog (97 products; 75 imported), public product pages, Shopify product data.</td><td>Roppongi Nights = Dripshipper Cowboy Blend (imported, Dark &amp; Medium, 2oz–5lb). No Dripshipper product named or listed as Ginza Velvet, Harajuku Heat or Shibuya Sunrise; the three are not in the imported list.</td><td>Corresponding supplier product, origin, roast, sizes, Whole Bean/Ground support, supplier price and fulfillment for the three.</td><td>NOT VERIFIED — No confirmed corresponding Dripshipper supplier product could be identified from the available sources. Matching by similar descriptions would be a guess.</td><td>Supplier confirmation is required before assigning SKUs, variants, weights or fulfillment.</td></tr><tr><td><strong>Mint &amp; Honduras — supplier mapping</strong><br><span class="status pending">SUPPLIER CONFIRMATION REQUIRED</span></td><td>Dripshipper app Products list, Shopify inventory by location, SKUs.</td><td>Dripshipper lists Mint and Honduras once each as “Imported”. Both Shopify copies of each carry identical supplier SKUs and are stocked at the Dripshipper location.</td><td>The exact Shopify Product ID that Dripshipper actively synchronizes.</td><td>NOT POSSIBLE TO VERIFY FROM THE AVAILABLE DRIPSHIPPER INTERFACE — the linked Shopify Product ID is not shown.</td><td>Dripshipper support confirmation. No delete/merge.</td></tr><tr><td><strong>Cowboy Blend — Best Sellers sample pack</strong><br><span class="status pending">PARTIALLY VERIFIED</span></td><td>Dripshipper app Best Sellers collection, public Best Sellers Sample Pack page, Shopify description.</td><td>A. The supplier listing explicitly states the pack includes 6 Bean Blend, <strong>Cowboy Blend</strong>, Breakfast Blend, Peru, Mexico and Bali, each 2oz, packed as 2oz packs inside a fresh-seal coffee bag. The Shopify description of Tokyo Discovery Six matches.</td><td>B. The contents of a physically delivered pack.</td><td>NOT POSSIBLE TO CONFIRM PHYSICAL PACK CONTENTS FROM THE AVAILABLE ONLINE INFORMATION — no order was placed.</td><td>Dripshipper confirmation (or an approved sample order). Description keeps “Cowboy Blend”; not replaced with Roppongi Nights.</td></tr><tr><td><strong>Future Discovery Boxes (Core Four Sampler, Tea Discovery Box, Coffee + Tea Box)</strong><br><span class="status blocked">NOT VERIFIED FROM AVAILABLE SOURCES</span></td><td>Dripshipper app Sample Packs tab, Tea tab, public pages, Help Center (bundles, custom labels).</td><td>Dripshipper offers exactly 3 sample packs (Best Sellers, Flavored, Single Origin Favorites), 2oz only, Standard grind only in Shopify. No tea sample pack is listed. Help Center: bundles that mix Dripshipper items with items from another location often fail. No minimums for dropshipping.</td><td>Custom samplers, a tea sampler, combined coffee + tea packaging, Whole Bean sample packs, costs for custom boxes.</td><td>NOT CONFIRMED — Supplier fulfillment support for these proposed boxes cannot be verified from available sources. The Core Four manual products are not Dripshipper products, so a Core Four sampler has no supplier source today.</td><td>Direct Dripshipper confirmation before any product is created.</td></tr><tr><td><strong>Jasmine — Sakura ingredient</strong><br><span class="status blocked">NOT VERIFIED FROM AVAILABLE SOURCES</span></td><td>Dripshipper Help Center ingredient list, public Jasmine page, Shopify description.</td><td>Ingredients: Green Tea, jasmine blossoms. 3oz resealable bag.</td><td>Any Sakura / cherry blossom content.</td><td>NOT VERIFIED — Sakura/cherry blossom is not confirmed in the available supplier information.</td><td>Product remains “Jasmine” until Dripshipper confirms otherwise.</td></tr><tr><td><strong>Candy Cane — mint claim</strong><br><span class="status pending">PARTIALLY VERIFIED</span></td><td>Public Candy Cane page, Help Center flavored-coffee ingredient line, Shopify description.</td><td>Supplier page describes a “peppermint-style aroma” and “festive peppermint notes”. Flavored-coffee ingredient line: Coffee, Natural Flavorings. Shopify description: “All natural flavoring”.</td><td>A specific mint/peppermint flavoring ingredient.</td><td>The supplier describes peppermint taste notes but does not document the flavoring ingredient. Tokyo Winter Mint cannot be treated as a verified ingredient claim.</td><td>Client decides on the name; Dripshipper confirmation if a mint ingredient claim is wanted.</td></tr><tr><td><strong>Inventory &amp; synchronization</strong><br><span class="status pending">PARTIALLY VERIFIED</span></td><td>Shopify inventory by location, Help Center (“grayed out” article), Dripshipper app.</td><td>Supplier-linked products are stocked at the “Dripshipper” app location (999 per variant observed). Help Center: Dripshipper fulfills from its own location and treats connected SKUs as in stock; paid Shopify orders with Dripshipper products are sent automatically.</td><td>Product-to-product synchronization mapping for each Shopify product.</td><td>Mapping is not exposed in the available interface. The 999 values are what the Dripshipper location currently holds; they were not called placeholders.</td><td>Dripshipper confirmation if a full mapping report is needed.</td></tr><tr><td><strong>Family tag synchronization</strong><br><span class="status pending">NOT VERIFIED FROM AVAILABLE SOURCES</span></td><td>Help Center “How to add a product” and related articles.</td><td>Dripshipper can add a tag at import (“Add tag”). Current family tags work and collection counts are correct.</td><td>Whether future Dripshipper syncs overwrite custom Shopify tags.</td><td>NOT VERIFIED — The effect of future Dripshipper synchronization on custom product-family tags could not be confirmed.</td><td>Re-check collection counts after the next supplier sync; ask Dripshipper if certainty is needed.</td></tr>      </tbody>
     </table>
+  </div>
+</section>
+
+<section class="card">
+  <div class="kicker">Supplier — 8 October research</div>
+  <h2>Supplier Company Information &amp; Verification</h2>
+  <p class="muted" style="margin-top:0">Research only, from Dripshipper’s own website, Help Center and legal pages, plus the connected Dripshipper app and Shopify admin (read-only). No store or supplier setting was changed and nobody was contacted. Companies listed on Dripshipper’s Compare Suppliers page (<a href="https://www.dripshipper.io/compare-suppliers" target="_blank" rel="noopener">dripshipper.io/compare-suppliers</a>: Roastify, Supliful, Path Coffee Roasters, Aroma Ridge, Joe’s Garage Coffee) are Dripshipper’s competitors; none is connected to Tokyo Nights Coffee.</p>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Information</th><th>Verified details</th><th>Verification status</th><th>Official source</th></tr></thead>
+      <tbody>
+<tr><td><strong>Company / supplier name</strong></td><td><strong>Dripshipper</strong> — private-label coffee and tea dropshipping platform (“We roast, package, and ship premium coffee and tea under your branding”).</td><td><span class="status pass">VERIFIED</span></td><td><a href="https://www.dripshipper.io/" target="_blank" rel="noopener">www.dripshipper.io/</a></td></tr>
+<tr><td><strong>Registered legal company name</strong></td><td>The App terms name <strong>The Doughty Organization LLC</strong> (“Doughty”) as the party operating the apps on dripshipper.io; governed by California law. State registration record, entity number and registered-agent address were not checked: <em>Not publicly verified</em> from Dripshipper’s own pages.</td><td><span class="status pending">PARTIALLY VERIFIED</span></td><td><a href="https://help.dripshipper.io/en/articles/5932978-end-user-license-agreement" target="_blank" rel="noopener">Help Center — End User License Agreement (Last Updated 28 Jan 2022)</a></td></tr>
+<tr><td><strong>Official website</strong></td><td><code>https://www.dripshipper.io</code> · app: <code>app2.dripshipper.io</code> · help: <code>help.dripshipper.io</code></td><td><span class="status pass">VERIFIED</span></td><td><a href="https://www.dripshipper.io/" target="_blank" rel="noopener">www.dripshipper.io/</a></td></tr>
+<tr><td><strong>Business / mailing address</strong></td><td>Two different mailing addresses are published for privacy contact, both “Dripshipper, ATTN: Dan Doughty”:<br>• Help Center privacy policy: <strong>30650 Rancho California Rd, Suite D406 #312, Temecula, CA 92591, USA</strong><br>• Website privacy policy (Last Updated 3 Nov 2021): <strong>144 E. Main Ave., Morgan Hill, CA 95037, USA</strong><br>Neither page says it is the registered legal address. Current registered business address: <em>Not publicly verified</em>.</td><td><span class="status pending">PARTIALLY VERIFIED</span></td><td><a href="https://help.dripshipper.io/en/articles/5812233-privacy-policy" target="_blank" rel="noopener">Help Center — Privacy Policy</a><br><a href="https://www.dripshipper.io/privacy-policy" target="_blank" rel="noopener">dripshipper.io/privacy-policy</a></td></tr>
+<tr><td><strong>City, state, ZIP, country</strong></td><td>As published above: Temecula, CA 92591, USA (Help Center) and Morgan Hill, CA 95037, USA (website, older). The site footer line “Made with love in San Diego, California” is a tagline, not an address.</td><td><span class="status pending">PARTIALLY VERIFIED</span></td><td><a href="https://help.dripshipper.io/en/articles/5812233-privacy-policy" target="_blank" rel="noopener">Help Center — Privacy Policy</a><br><a href="https://www.dripshipper.io/privacy-policy" target="_blank" rel="noopener">Website privacy policy</a></td></tr>
+<tr><td><strong>Customer support email</strong></td><td><strong>support@dripshipper.io</strong></td><td><span class="status pass">VERIFIED</span></td><td><a href="https://help.dripshipper.io/en/articles/5812233-privacy-policy" target="_blank" rel="noopener">Help Center — Privacy Policy</a><br><a href="https://www.dripshipper.io/privacy-policy" target="_blank" rel="noopener">Website privacy policy</a></td></tr>
+<tr><td><strong>Support phone number</strong></td><td>No phone number is published on the checked official pages. <em>Not publicly verified.</em></td><td><span class="status blocked">NOT PUBLICLY VERIFIED</span></td><td><a href="https://www.dripshipper.io/contact-us" target="_blank" rel="noopener">Contact us</a>, <a href="https://www.dripshipper.io/" target="_blank" rel="noopener">homepage</a>, privacy policies</td></tr>
+<tr><td><strong>Official contact / support page</strong></td><td>Contact page offers “Contact support” (support team) and the Knowledge Base (Help Center).</td><td><span class="status pass">VERIFIED</span></td><td><a href="https://www.dripshipper.io/contact-us" target="_blank" rel="noopener">www.dripshipper.io/contact-us</a><br><a href="https://help.dripshipper.io/en/" target="_blank" rel="noopener">help.dripshipper.io/en/</a></td></tr>
+<tr><td><strong>Coffee roasting location</strong></td><td>Roasting partner facilities in <strong>Temecula, California</strong> (west coast) and <strong>Orland Park, Illinois</strong> (Midwest). Help Center names the roasters as <strong>Temecula Coffee Roasters</strong> (“Distributed by Temecula Coffee Roasters. Temecula, CA 92590”) and <strong>Old Chicago / Calutech</strong> (“Distributed By: Calutech Inc, Orland Park, IL 60462”). These are separate companies from Dripshipper.</td><td><span class="status pass">VERIFIED</span></td><td><a href="https://www.dripshipper.io/our-coffee" target="_blank" rel="noopener">Our Coffee &amp; Tea</a><br><a href="https://help.dripshipper.io/en/articles/16793584-temecula-vs-old-chicago-products-and-the-distributed-by-line" target="_blank" rel="noopener">Help Center — Temecula vs Old Chicago</a></td></tr>
+<tr><td><strong>Product manufacturing location</strong></td><td>Coffee: roasted in the USA at the two partner facilities above. Tea: product pages say “Made fresh to order in our US facility” but do not name the facility; tea origin is listed as “Global”. Exact tea packing facility: <em>Not publicly verified</em>.</td><td><span class="status pending">PARTIALLY VERIFIED</span></td><td><a href="https://www.dripshipper.io/our-coffee" target="_blank" rel="noopener">Our Coffee &amp; Tea</a><br><a href="https://www.dripshipper.io/private-label-coffees/jasmine" target="_blank" rel="noopener">Jasmine product page</a></td></tr>
+<tr><td><strong>Shipping / fulfillment origin</strong></td><td>“We roast and fulfill orders from Temecula, CA and Orland Park, IL through our roasting facility partner network.” The roaster (vendor) on each product is the one that fulfills it. International rate guidance uses ZIP 60462 (Orland Park) as the mailing origin. A separate warehouse is not described: <em>Not publicly verified</em>.</td><td><span class="status pending">PARTIALLY VERIFIED</span></td><td><a href="https://www.dripshipper.io/our-coffee" target="_blank" rel="noopener">Our Coffee &amp; Tea</a><br><a href="https://help.dripshipper.io/en/articles/16793584-temecula-vs-old-chicago-products-and-the-distributed-by-line" target="_blank" rel="noopener">Temecula vs Old Chicago</a><br><a href="https://help.dripshipper.io/en/articles/5812254-international-shipping-costs" target="_blank" rel="noopener">International shipping costs</a></td></tr>
+<tr><td><strong>Supplier services &amp; product categories</strong></td><td>Coffee dropship program, private-label coffee, instant coffee, tea, bulk/wholesale and custom labels. Catalog categories in the app: Single Origins 21, Blends 31, Flavored 17, Sample Packs 3, Fairtrade 9, Tea 16 (97 total). Integrations: Shopify, Wix, WooCommerce, Squarespace, BigCommerce.</td><td><span class="status pass">VERIFIED</span></td><td><a href="https://www.dripshipper.io/" target="_blank" rel="noopener">www.dripshipper.io/</a><br>Connected Dripshipper app (read-only), <code>app2.dripshipper.io/products</code>, viewed 8 Oct 2026</td></tr>
+<tr><td><strong>Coffee &amp; tea sourcing</strong></td><td>Coffee: specialty-grade; flavored coffees start as specialty-grade single origin, roasted to a medium, then flavored with flavoring oils; Fairtrade® options available (organic claims need the seller’s own USDA certification). Tea: ingredient lists published per tea (e.g. Jasmine — Green Tea, jasmine blossoms); tea growers/estates are not published. Farm-level sourcing for individual products: <em>Not publicly verified</em>.</td><td><span class="status pending">PARTIALLY VERIFIED</span></td><td><a href="https://www.dripshipper.io/our-coffee" target="_blank" rel="noopener">Our Coffee &amp; Tea</a><br><a href="https://help.dripshipper.io/en/articles/5812212-get-to-know-our-coffee" target="_blank" rel="noopener">Get to know our coffee</a><br><a href="https://help.dripshipper.io/en/articles/16793578-ingredients-for-coffee-flavored-coffee-and-tea" target="_blank" rel="noopener">Ingredients article</a></td></tr>
+<tr><td><strong>White-label / private-label capabilities</strong></td><td>Your logo/label on every bag; label templates or own designs; custom-label SKUs; no minimum order quantities; optional $30 FDA-Compliant Address Service (Temecula products only).</td><td><span class="status pass">VERIFIED</span></td><td><a href="https://www.dripshipper.io/private-label-tea-dropshipping" target="_blank" rel="noopener">Private label tea</a><br><a href="https://help.dripshipper.io/en/articles/16793584-temecula-vs-old-chicago-products-and-the-distributed-by-line" target="_blank" rel="noopener">Temecula vs Old Chicago</a><br><a href="https://www.dripshipper.io/" target="_blank" rel="noopener">www.dripshipper.io/</a></td></tr>
+<tr><td><strong>Fulfillment &amp; shipping coverage</strong></td><td>Ships free to any USA address (shipping included in product cost). Orders take 1–5 business days to roast/ship plus 1–5 business days USPS ground transit; tracking is added to the order. International: USPS (usually First-Class Package International), charged at USPS rate; not guaranteed and not refundable.</td><td><span class="status pass">VERIFIED</span></td><td><a href="https://help.dripshipper.io/en/articles/5812241-how-long-does-it-take-orders-to-ship" target="_blank" rel="noopener">How long does it take orders to ship?</a><br><a href="https://help.dripshipper.io/en/articles/5812254-international-shipping-costs" target="_blank" rel="noopener">International shipping costs</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid2" style="margin-top:16px">
+    <div>
+      <div class="kicker">Who is who</div>
+      <ul class="list">
+        <li><strong>Platform / company:</strong> Dripshipper, operated under The Doughty Organization LLC (per the App terms).</li>
+        <li><strong>Actual roasters / manufacturers:</strong> Temecula Coffee Roasters (Temecula, CA 92590) and Calutech Inc / “Old Chicago” (Orland Park, IL 60462). These are partner companies, not Dripshipper itself.</li>
+        <li><strong>Fulfillment location:</strong> orders ship from the roaster that owns the product (Temecula, CA or Orland Park, IL). No separate warehouse is published.</li>
+        <li><strong>Registered business address:</strong> not published as such. The privacy-policy mailing addresses (Temecula, CA 92591 and the older Morgan Hill, CA 95037) are contact addresses, not proof of registration.</li>
+      </ul>
+    </div>
+    <div>
+      <div class="kicker">How Dripshipper supplies Tokyo Nights Coffee</div>
+      <ul class="list">
+        <li>Products are imported from the Dripshipper catalog into Shopify. When a customer pays, Dripshipper sends the order to the roaster, which roasts, packs your label and ships via USPS; tracking is written back to the Shopify order (<a href="https://www.dripshipper.io/features" target="_blank" rel="noopener">Features</a>, <a href="https://help.dripshipper.io/en/articles/16792662-how-do-i-connect-dripshipper-with-shopify" target="_blank" rel="noopener">Connect with Shopify</a>).</li>
+        <li><strong>Confirmed for this store:</strong> the Dripshipper app is installed (Shopify admin → Apps); a “Dripshipper” app fulfillment location exists (Settings → Locations); the connected app shows the Tokyo Nights logo on the packaging step and lists <strong>75</strong> catalog products as “Imported”.</li>
+        <li><strong>Roaster shown in the app for those 75:</strong> 64 list “Temecula, CA” (incl. Mint, Honduras, Cowboy Blend, Candy Cane, all 3 sample packs, all teas, pods and Instant Coffee); 11 list “Illinois, USA” (12/60 Pack Capsules, Cold Brew Coffee, Latin American, Asian Plateau, African Kahawa, House and Breakfast Blend, Gourmet Donut Shop, French Roast, Italian Roast).</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="notice" style="margin-top:14px">
+    <strong>Cannot be independently verified from the available sources:</strong> the registered legal address and state registration of The Doughty Organization LLC; a support phone number; which of the two published mailing addresses is current; that the app label “Illinois, USA” refers specifically to Calutech Inc (the Help Center and Our Coffee page point to Orland Park, IL, but the app does not name the company); the tea packing facility; farm-level sourcing. This general company information does <strong>not</strong> prove that any particular Tokyo Nights product is linked to a particular supplier record.
+  </div>
+  <div class="notice" style="margin-top:10px">
+    <strong>Needs direct Dripshipper confirmation (unchanged findings):</strong> Core Four supplier matches (Ginza Velvet, Harajuku Heat, Shibuya Sunrise) — unconfirmed · Mint/Honduras exact linked Shopify Product ID — unconfirmed · Cowboy Blend physical sampler contents — unconfirmed · future custom Discovery Boxes fulfillment — unconfirmed · Jasmine Sakura ingredient — unconfirmed · Candy Cane peppermint notes documented, exact flavoring ingredient unconfirmed · effect of future syncs on custom family tags — unconfirmed. Contact for these: <strong>support@dripshipper.io</strong> or “Contact support” on <a href="https://www.dripshipper.io/contact-us" target="_blank" rel="noopener">dripshipper.io/contact-us</a>.
   </div>
 </section>
 
@@ -453,112 +507,25 @@ details.urls pre{white-space:pre-wrap;font-size:11px;background:#faf6f1;border:1
 </section>
 
 <section class="card">
-  <div class="kicker">Evidence</div>
-  <h2>Tested URL inventory (8 October)</h2>
-  <p class="muted" style="margin-top:0">103 URLs checked; HTTP status shown first. All returned 200; no redirects; no 404s.</p>
-  <details class="urls"><summary>Show all tested URLs</summary><pre>200  https://tokyonightscoffee.com/
-200  https://tokyonightscoffee.com/collections
-200  https://tokyonightscoffee.com/collections/all
-200  https://tokyonightscoffee.com/cart
-200  https://tokyonightscoffee.com/search
-200  https://tokyonightscoffee.com/pages/contact
-200  https://tokyonightscoffee.com/policies/shipping-policy
-200  https://tokyonightscoffee.com/policies/refund-policy
-200  https://tokyonightscoffee.com/policies/privacy-policy
-200  https://tokyonightscoffee.com/policies/terms-of-service
-200  https://tokyonightscoffee.com/collections/capsules
-200  https://tokyonightscoffee.com/collections/coffee
-200  https://tokyonightscoffee.com/collections/discovery-boxes
-200  https://tokyonightscoffee.com/collections/flavored
-200  https://tokyonightscoffee.com/collections/ground-coffee
-200  https://tokyonightscoffee.com/collections/frontpage
-200  https://tokyonightscoffee.com/collections/merch
-200  https://tokyonightscoffee.com/collections/sample-pack
-200  https://tokyonightscoffee.com/collections/blend
-200  https://tokyonightscoffee.com/collections/single-origin
-200  https://tokyonightscoffee.com/collections/specialty-coffee
-200  https://tokyonightscoffee.com/collections/tea
-200  https://tokyonightscoffee.com/collections/whole-bean
-200  https://tokyonightscoffee.com/products/harajuku-heat
-200  https://tokyonightscoffee.com/products/ginza-velvet
-200  https://tokyonightscoffee.com/products/shibuya-sunrise
-200  https://tokyonightscoffee.com/products/cowboy-blend
-200  https://tokyonightscoffee.com/products/blonde
-200  https://tokyonightscoffee.com/products/60-pack-single-serve-coffee-capsules
-200  https://tokyonightscoffee.com/products/african-espresso
-200  https://tokyonightscoffee.com/products/breakfast-blend-2
-200  https://tokyonightscoffee.com/products/6-bean-blend
-200  https://tokyonightscoffee.com/products/breakfast-blend-1
-200  https://tokyonightscoffee.com/products/breakfast-blend
-200  https://tokyonightscoffee.com/products/asian-plateau-blend
-200  https://tokyonightscoffee.com/products/latin-american-blend
-200  https://tokyonightscoffee.com/products/gourmet-donut-shop
-200  https://tokyonightscoffee.com/products/african-kahawa-blend
-200  https://tokyonightscoffee.com/products/house-blend
-200  https://tokyonightscoffee.com/products/italian-roast-1
-200  https://tokyonightscoffee.com/products/holiday-blend
-200  https://tokyonightscoffee.com/products/french-roast-1
-200  https://tokyonightscoffee.com/products/whiskey-barrel-aged
-200  https://tokyonightscoffee.com/products/cold-brew-coffee-1
-200  https://tokyonightscoffee.com/products/max-caf-blend
-200  https://tokyonightscoffee.com/products/instant-coffee
-200  https://tokyonightscoffee.com/products/coffee-with-mushrooms-dark-roast
-200  https://tokyonightscoffee.com/products/kopi-safari
-200  https://tokyonightscoffee.com/products/bali-blue
-200  https://tokyonightscoffee.com/products/coffee-with-mushrooms-medium-roast
-200  https://tokyonightscoffee.com/products/brazil-santos
-200  https://tokyonightscoffee.com/products/cold-brew-coffee
-200  https://tokyonightscoffee.com/products/12-pack-single-serve-coffee-capsules
-200  https://tokyonightscoffee.com/products/italian-roast
-200  https://tokyonightscoffee.com/products/pecan-pie
-200  https://tokyonightscoffee.com/products/smores
-200  https://tokyonightscoffee.com/products/mint-1
-200  https://tokyonightscoffee.com/products/dubai-chocolate
-200  https://tokyonightscoffee.com/products/pumpkin-spice
-200  https://tokyonightscoffee.com/products/colombia
-200  https://tokyonightscoffee.com/products/ethiopia-natural
-200  https://tokyonightscoffee.com/products/costa-rica
-200  https://tokyonightscoffee.com/products/honduras-1
-200  https://tokyonightscoffee.com/products/honduras
-200  https://tokyonightscoffee.com/products/mexico
-200  https://tokyonightscoffee.com/products/guatemala
-200  https://tokyonightscoffee.com/products/papua-new-guinea
-200  https://tokyonightscoffee.com/products/peru
-200  https://tokyonightscoffee.com/products/nicaragua
-200  https://tokyonightscoffee.com/products/tanzania
-200  https://tokyonightscoffee.com/products/peru-decaf
-200  https://tokyonightscoffee.com/products/french-roast
-200  https://tokyonightscoffee.com/products/kenya
-200  https://tokyonightscoffee.com/products/sumatra
-200  https://tokyonightscoffee.com/products/turtle
-200  https://tokyonightscoffee.com/products/cinnabun
-200  https://tokyonightscoffee.com/products/mexico-coffee-pods
-200  https://tokyonightscoffee.com/products/bali-coffee-pods
-200  https://tokyonightscoffee.com/products/peru-coffee-pods
-200  https://tokyonightscoffee.com/products/uganda
-200  https://tokyonightscoffee.com/products/flavored-coffees-sample-pack
-200  https://tokyonightscoffee.com/products/best-sellers-sample-pack-6bean-cowboy-breakfast-peru-mexico-bali
-200  https://tokyonightscoffee.com/products/masala-chai
-200  https://tokyonightscoffee.com/products/single-origin-favorites-sample-pack
-200  https://tokyonightscoffee.com/products/jasmine
-200  https://tokyonightscoffee.com/products/english-breakfast
-200  https://tokyonightscoffee.com/products/mango-treat
-200  https://tokyonightscoffee.com/products/apple-cider-rooibos
-200  https://tokyonightscoffee.com/products/mocha
-200  https://tokyonightscoffee.com/products/peach-paradise
-200  https://tokyonightscoffee.com/products/caramel
-200  https://tokyonightscoffee.com/products/cinnamon-hazelnut
-200  https://tokyonightscoffee.com/products/earl-grey
-200  https://tokyonightscoffee.com/products/hibiscus-berry-tea
-200  https://tokyonightscoffee.com/products/moroccan-mint
-200  https://tokyonightscoffee.com/products/matcha
-200  https://tokyonightscoffee.com/products/mexican-chocolate
-200  https://tokyonightscoffee.com/products/hojicha
-200  https://tokyonightscoffee.com/products/chocolate-hazelnut
-200  https://tokyonightscoffee.com/products/hazelnut
-200  https://tokyonightscoffee.com/products/french-vanilla
-200  https://tokyonightscoffee.com/products/mint
-200  https://tokyonightscoffee.com/products/candy-cane</pre></details>
+  <div class="kicker">Action summary</div>
+  <h2>Who acts next</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Issue</th><th>Responsible</th><th>Next action</th></tr></thead>
+      <tbody>
+<tr><td><strong>Core Four 3 manual products purchasable</strong></td><td>Client</td><td>Decide whether to keep selling them or unpublish them until supplier confirmation</td></tr>
+<tr><td><strong>Discovery Boxes navigation</strong></td><td>Client</td><td>Confirm top-level placement or the current Shop Coffee submenu placement</td></tr>
+<tr><td><strong>Tea Format: Loose Leaf</strong></td><td>Client</td><td>Approve the display-only solution</td></tr>
+<tr><td><strong>Whole Bean / Ground filter</strong></td><td>Client</td><td>Give permission to install Shopify Search &amp; Discovery</td></tr>
+<tr><td><strong>WZ sender email</strong></td><td>Client</td><td>Connect the store’s own Gmail or SMTP account</td></tr>
+<tr><td><strong>Mint / Honduras mapping</strong></td><td>Dripshipper</td><td>Confirm the exact linked Shopify Product ID</td></tr>
+<tr><td><strong>Supplier product &amp; sampler details</strong></td><td>Dripshipper</td><td>Confirm the unverified supplier information</td></tr>
+<tr><td><strong>Homepage shipping mismatch</strong></td><td>Client</td><td>Approve the corrected shipping text</td></tr>
+<tr><td><strong>Tokyo-origin claims</strong></td><td>Client</td><td>Confirm the claims or approve a correction</td></tr>
+<tr><td><strong>Checkout transaction test</strong></td><td>Client</td><td>Decide whether a full test order is required</td></tr>
+      </tbody>
+    </table>
+  </div>
 </section>
 
 <section class="card">
