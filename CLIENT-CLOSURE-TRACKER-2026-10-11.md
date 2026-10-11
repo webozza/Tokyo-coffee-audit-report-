@@ -7,7 +7,7 @@ Authorization: Karlton’s supplied screenshot; execute client-confirmed work on
 
 **Closure remains pending.** Theme changes are saved in requested draft **185649430801**, “COFFEE | JCI | WORKING | SEP 2026”. Published theme remains **182090334481**, “coffee”. Publishing the whole draft requires confirmation because it replaces a different live theme. No theme was published in this session.
 
-Navigation and Search & Discovery are store-wide saved changes. The user has authorized pushing the updated audit. Deployment verification is recorded below once the public site serves the revision. Historical audit is preserved separately as `audit-2026-10-08.html` and is not current evidence.
+Navigation and Search & Discovery are store-wide saved changes. The updated audit was pushed and deployed to https://tokyocoffeeauditreport.vercel.app/. GitHub’s Vercel status reports deployment completed for revision `ffaa400`; the public homepage serves the new approval/chronology section. Historical audit is preserved separately as `audit-2026-10-08.html` and is not current evidence.
 
 ## Task status
 
@@ -68,3 +68,10 @@ Submitted through Shopify app support; replies use the registered store email. N
 - The former Discovery Boxes placement discrepancy is corrected; no attribution about who originally made it is supported.
 - “Push” is being applied to the specified theme’s saved files and the audit repository. Theme 185649430801 remains a draft; replacing the different live theme is not inferred from a file-push request.
 - No duplicate deletion/merging, supplier-linked record changes, or unintended fulfillment was performed.
+
+## Push and deployment verification
+
+- Audit revision `ffaa400` pushed to `origin/main`; Vercel deployment succeeded.
+- Public homepage checked after deployment: current 11 October title and new Approval and chronology section present.
+- All nine changed theme files re-read from Shopify theme `185649430801` during this follow-up: exact local/remote matches. No additional upload was needed and no different theme was modified.
+- The specified theme remains Draft. Pushing files and deploying the audit did not publish a replacement storefront theme.
