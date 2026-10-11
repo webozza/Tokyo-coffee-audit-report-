@@ -75,3 +75,10 @@ Submitted through Shopify app support; replies use the registered store email. N
 - Public homepage checked after deployment: current 11 October title and new Approval and chronology section present.
 - All nine changed theme files re-read from Shopify theme `185649430801` during this follow-up: exact local/remote matches. No additional upload was needed and no different theme was modified.
 - The specified theme remains Draft. Pushing files and deploying the audit did not publish a replacement storefront theme.
+
+## Client sharing URL update
+
+- At the user’s request, `/audit-2026-10-08.html` now serves the current 11 October client-facing report, identical to the homepage. The filename is retained for the client’s existing link; the visible report date is 11 October.
+- Removed the historical banner, internal approval discussion and historical navigation link from the shared report. Current draft/live distinctions and unresolved dependencies remain visible.
+- Preserved the earlier report outside the deployment folder in `../closure-backup-2026-10-11/historical-audit-2026-10-08.html`.
+- No Shopify changes were made for this presentation update.
