@@ -1,0 +1,38 @@
+[
+  {
+    "path": "snippets/product-variant-picker.liquid",
+    "matches": true
+  },
+  {
+    "path": "snippets/product-variant-options.liquid",
+    "matches": true
+  },
+  {
+    "path": "locales/en.default.json",
+    "matches": true
+  },
+  {
+    "path": "snippets/facets.liquid",
+    "matches": true
+  },
+  {
+    "path": "snippets/cart-drawer.liquid",
+    "matches": true
+  },
+  {
+    "path": "sections/main-cart-items.liquid",
+    "matches": true
+  },
+  {
+    "path": "sections/cart-notification-product.liquid",
+    "matches": true
+  },
+  {
+    "path": "blocks/ai_gen_block_f454e2c.liquid",
+    "matches": true
+  },
+  {
+    "path": "templates/index.json",
+    "matches": true
+  }
+]

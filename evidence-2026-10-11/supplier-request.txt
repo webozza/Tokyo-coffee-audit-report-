@@ -1,0 +1,13 @@
+Hello Dripshipper Support,
+
+We are completing supplier verification for Tokyo Nights Coffee (0c3u4u-pe.myshopify.com; admin store tokyo-nights-coffee). Please confirm the exact Shopify Product ID you actively synchronize for each duplicate pair recorded in our audit:
+Mint: mint — 10952738308369; mint-1 — 10952740372753.
+Honduras: honduras — 10952739979537; honduras-1 — 10952740012305.
+
+Please also confirm fulfillment options for Ginza Velvet, Harajuku Heat and Shibuya Sunrise, including the exact corresponding supplier products (if any), supported Whole Bean/Ground variants, supplier SKUs and inventory synchronization requirements. We will not guess mappings from similar descriptions.
+
+For a controlled Shopify checkout test, can a Shopify test order trigger any Dripshipper import, charge or fulfillment? Please confirm the supported method to guarantee no real supplier fulfillment.
+
+This is a verification request only. Please do not modify, delete, merge, relink or fulfill any product/order on our behalf.
+
+Thank you.
