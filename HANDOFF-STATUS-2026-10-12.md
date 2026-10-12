@@ -155,7 +155,11 @@ The Dripshipper verification request was submitted through Shopify’s support f
 
 For WZ Back In Stock, there is currently no Gmail or SMTP sender configuration in the app. Please connect your preferred Gmail account or configure your SMTP provider through WZ → Open sender email. Once the connection is complete, we can carry out a controlled notification-delivery test. The audit has been corrected to clarify that this is an initial setup requirement, rather than an existing sender configuration awaiting authorization.
 
-The handoff also documents the permissions, safety controls and exact steps for the deferred checkout test and permanent WZ sender authorization/delivery test. No real payment or supplier fulfillment was triggered. Supplier confirmation, controlled checkout execution and permanent WZ delivery remain explicitly open pending the prerequisites listed in the report.
+For checkout testing, I’ve documented the required permissions, safety controls, test steps, and restoration procedure in the updated audit. No real payment or supplier fulfillment has been triggered.
+
+To complete the test later, we’ll need access to the payment provider’s test mode and written confirmation from Dripshipper on safely isolating test orders. Once those prerequisites are confirmed, we can agree on a suitable testing window and verify the simulated payment, order creation, and confirmation email. Until then, checkout transaction testing will remain clearly marked as pending.
+
+Supplier confirmation and permanent WZ delivery also remain explicitly open pending the prerequisites listed in the report.
 
 Please review the updated audit at https://tokyocoffeeauditreport.vercel.app/audit-2026-10-08.html. The publication backup reference and any Dripshipper reply should be attached to the handoff before representing those records as complete. The completed development scope is ready for your review with these dependencies disclosed.
 
