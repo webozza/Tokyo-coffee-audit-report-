@@ -1,0 +1,227 @@
+{
+  "checkedAt": "2026-10-12T04:01:10.310Z",
+  "theme": {
+    "name": "COFFEE | JCI | WORKING | SEP 2026",
+    "id": 185649430801,
+    "schema_name": "Dawn",
+    "schema_version": "15.2.0",
+    "theme_store_id": null,
+    "role": "main",
+    "handle": "null",
+    "style": {
+      "id": null,
+      "handle": null
+    }
+  },
+  "home": {
+    "url": "https://tokyonightscoffee.com/",
+    "shipping": true
+  },
+  "protectedProducts": [
+    {
+      "slug": "ginza-velvet",
+      "status": 404,
+      "addToCart": 0
+    },
+    {
+      "slug": "harajuku-heat",
+      "status": 404,
+      "addToCart": 0
+    },
+    {
+      "slug": "shibuya-sunrise",
+      "status": 404,
+      "addToCart": 0
+    }
+  ],
+  "wz": {
+    "setup": "1 of 2 complete",
+    "gmail": "Not connected",
+    "smtpHostConfigured": false,
+    "smtpUserConfigured": false,
+    "smtpFromConfigured": false,
+    "changed": false
+  },
+  "filters": {
+    "choices": [
+      {
+        "value": "gid://shopify/FilterSettingGroup/203981073",
+        "label": "Whole Bean (54)\n                              \n                              Whole Bean (54 products)"
+      },
+      {
+        "value": "gid://shopify/FilterSettingGroup/203948305",
+        "label": "Ground Coffee (60)\n                              \n                              Ground Coffee (60 products)"
+      }
+    ],
+    "wholeBean": {
+      "url": "https://tokyonightscoffee.com/collections/all?filter.v.price.gte=&filter.v.price.lte=&filter.p.tag=gid%3A%2F%2Fshopify%2FFilterSettingGroup%2F203981073&sort_by=title-ascending",
+      "count": 54
+    },
+    "groundCoffee": {
+      "url": "https://tokyonightscoffee.com/collections/all?filter.p.tag=gid%3A%2F%2Fshopify%2FFilterSettingGroup%2F203948305",
+      "count": 60
+    }
+  },
+  "tea": [
+    {
+      "url": "https://tokyonightscoffee.com/products/moroccan-mint",
+      "status": 200,
+      "format": true,
+      "looseLeaf": true,
+      "supplierInputs": [
+        {
+          "name": "Grind-1\n",
+          "value": "Loose leaf"
+        }
+      ]
+    },
+    {
+      "url": "https://tokyonightscoffee.com/products/earl-grey",
+      "status": 200,
+      "format": true,
+      "looseLeaf": true,
+      "supplierInputs": [
+        {
+          "name": "Grind-1\n",
+          "value": "Loose leaf"
+        }
+      ]
+    },
+    {
+      "url": "https://tokyonightscoffee.com/products/mango-treat",
+      "status": 200,
+      "format": true,
+      "looseLeaf": true,
+      "supplierInputs": [
+        {
+          "name": "Grind-1\n",
+          "value": "Loose leaf"
+        }
+      ]
+    },
+    {
+      "url": "https://tokyonightscoffee.com/products/jasmine",
+      "status": 200,
+      "format": true,
+      "looseLeaf": true,
+      "supplierInputs": [
+        {
+          "name": "Grind-1\n",
+          "value": "Loose leaf"
+        }
+      ]
+    },
+    {
+      "url": "https://tokyonightscoffee.com/products/hibiscus-berry-tea",
+      "status": 200,
+      "format": true,
+      "looseLeaf": true,
+      "supplierInputs": [
+        {
+          "name": "Grind-1\n",
+          "value": "Loose leaf"
+        }
+      ]
+    },
+    {
+      "url": "https://tokyonightscoffee.com/products/matcha",
+      "status": 200,
+      "format": true,
+      "looseLeaf": true,
+      "supplierInputs": [
+        {
+          "name": "Grind-1\n",
+          "value": "Loose leaf"
+        }
+      ]
+    },
+    {
+      "url": "https://tokyonightscoffee.com/products/hojicha",
+      "status": 200,
+      "format": true,
+      "looseLeaf": true,
+      "supplierInputs": [
+        {
+          "name": "Grind-1\n",
+          "value": "Loose leaf"
+        }
+      ]
+    },
+    {
+      "url": "https://tokyonightscoffee.com/products/masala-chai",
+      "status": 200,
+      "format": true,
+      "looseLeaf": true,
+      "supplierInputs": [
+        {
+          "name": "Grind-1\n",
+          "value": "Loose leaf"
+        }
+      ]
+    },
+    {
+      "url": "https://tokyonightscoffee.com/products/peach-paradise",
+      "status": 200,
+      "format": true,
+      "looseLeaf": true,
+      "supplierInputs": [
+        {
+          "name": "Grind-1\n",
+          "value": "Loose leaf"
+        }
+      ]
+    },
+    {
+      "url": "https://tokyonightscoffee.com/products/english-breakfast",
+      "status": 200,
+      "format": true,
+      "looseLeaf": true,
+      "supplierInputs": [
+        {
+          "name": "Grind-1\n",
+          "value": "Loose leaf"
+        }
+      ]
+    },
+    {
+      "url": "https://tokyonightscoffee.com/products/apple-cider-rooibos",
+      "status": 200,
+      "format": true,
+      "looseLeaf": true,
+      "supplierInputs": [
+        {
+          "name": "Grind-1\n",
+          "value": "Loose leaf"
+        }
+      ]
+    }
+  ],
+  "discovery": {
+    "url": "https://tokyonightscoffee.com/collections/discovery-boxes",
+    "count": 3
+  },
+  "mobileNavigation": true,
+  "cart": {
+    "isolatedBrowserContext": true,
+    "product": "Ginza Grey",
+    "variantId": 53153253982481,
+    "format": "Loose Leaf",
+    "quantity": 2,
+    "checkoutSubmitted": false,
+    "cleanedUp": true
+  },
+  "anonymousTheme": {
+    "name": "COFFEE | JCI | WORKING | SEP 2026",
+    "id": 185649430801,
+    "schema_name": "Dawn",
+    "schema_version": "15.2.0",
+    "theme_store_id": null,
+    "role": "main",
+    "handle": "null",
+    "style": {
+      "id": null,
+      "handle": null
+    }
+  },
+  "finishedAt": "2026-10-12T04:13:24.078Z"
+}

@@ -1,0 +1,622 @@
+[
+  {
+    "handle": "mint",
+    "id": 10952738308369,
+    "variants": [
+      {
+        "id": 53153250017553,
+        "sku": "TVARMINT-CO-NA-12OZ",
+        "options": [
+          "Coarse",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153250050321,
+        "sku": "TVARMINT-CO-NA-1LB",
+        "options": [
+          "Coarse",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153250083089,
+        "sku": "TVARMINT-CO-NA-2LB",
+        "options": [
+          "Coarse",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153250115857,
+        "sku": "TVARMINT-CO-NA-5LB",
+        "options": [
+          "Coarse",
+          "5 LB"
+        ]
+      },
+      {
+        "id": 53153250148625,
+        "sku": "TVARMINT-CO-NA-12LB",
+        "options": [
+          "Coarse",
+          "12 LB"
+        ]
+      },
+      {
+        "id": 53153250181393,
+        "sku": "TVARMINT-ES-NA-12OZ",
+        "options": [
+          "Espresso",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153250214161,
+        "sku": "TVARMINT-ES-NA-1LB",
+        "options": [
+          "Espresso",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153250246929,
+        "sku": "TVARMINT-ES-NA-2LB",
+        "options": [
+          "Espresso",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153250279697,
+        "sku": "TVARMINT-ES-NA-5LB",
+        "options": [
+          "Espresso",
+          "5 LB"
+        ]
+      },
+      {
+        "id": 53153250312465,
+        "sku": "TVARMINT-ST-NA-12OZ",
+        "options": [
+          "Standard",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153250345233,
+        "sku": "TVARMINT-ST-NA-1LB",
+        "options": [
+          "Standard",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153250378001,
+        "sku": "TVARMINT-ST-NA-2LB",
+        "options": [
+          "Standard",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153250410769,
+        "sku": "TVARMINT-ST-NA-5LB",
+        "options": [
+          "Standard",
+          "5 LB"
+        ]
+      },
+      {
+        "id": 53153250443537,
+        "sku": "TVARMINT-WH-NA-12OZ",
+        "options": [
+          "Whole Bean",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153250476305,
+        "sku": "TVARMINT-WH-NA-1LB",
+        "options": [
+          "Whole Bean",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153250509073,
+        "sku": "TVARMINT-WH-NA-2LB",
+        "options": [
+          "Whole Bean",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153250541841,
+        "sku": "TVARMINT-WH-NA-5LB",
+        "options": [
+          "Whole Bean",
+          "5 LB"
+        ]
+      }
+    ],
+    "matchesOct11VariantIdsSkusOptions": true
+  },
+  {
+    "handle": "mint-1",
+    "id": 10952740372753,
+    "variants": [
+      {
+        "id": 53153272299793,
+        "sku": "TVARMINT-CO-NA-12OZ",
+        "options": [
+          "Coarse",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153272332561,
+        "sku": "TVARMINT-CO-NA-1LB",
+        "options": [
+          "Coarse",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153272365329,
+        "sku": "TVARMINT-CO-NA-2LB",
+        "options": [
+          "Coarse",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153272398097,
+        "sku": "TVARMINT-CO-NA-5LB",
+        "options": [
+          "Coarse",
+          "5 LB"
+        ]
+      },
+      {
+        "id": 53153272430865,
+        "sku": "TVARMINT-CO-NA-12LB",
+        "options": [
+          "Coarse",
+          "12 LB"
+        ]
+      },
+      {
+        "id": 53153272463633,
+        "sku": "TVARMINT-ES-NA-12OZ",
+        "options": [
+          "Espresso",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153272496401,
+        "sku": "TVARMINT-ES-NA-1LB",
+        "options": [
+          "Espresso",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153272529169,
+        "sku": "TVARMINT-ES-NA-2LB",
+        "options": [
+          "Espresso",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153272561937,
+        "sku": "TVARMINT-ES-NA-5LB",
+        "options": [
+          "Espresso",
+          "5 LB"
+        ]
+      },
+      {
+        "id": 53153272594705,
+        "sku": "TVARMINT-ST-NA-12OZ",
+        "options": [
+          "Standard",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153272627473,
+        "sku": "TVARMINT-ST-NA-1LB",
+        "options": [
+          "Standard",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153272660241,
+        "sku": "TVARMINT-ST-NA-2LB",
+        "options": [
+          "Standard",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153272693009,
+        "sku": "TVARMINT-ST-NA-5LB",
+        "options": [
+          "Standard",
+          "5 LB"
+        ]
+      },
+      {
+        "id": 53153272725777,
+        "sku": "TVARMINT-WH-NA-12OZ",
+        "options": [
+          "Whole Bean",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153272758545,
+        "sku": "TVARMINT-WH-NA-1LB",
+        "options": [
+          "Whole Bean",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153272791313,
+        "sku": "TVARMINT-WH-NA-2LB",
+        "options": [
+          "Whole Bean",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153272824081,
+        "sku": "TVARMINT-WH-NA-5LB",
+        "options": [
+          "Whole Bean",
+          "5 LB"
+        ]
+      }
+    ],
+    "matchesOct11VariantIdsSkusOptions": true
+  },
+  {
+    "handle": "honduras",
+    "id": 10952739979537,
+    "variants": [
+      {
+        "id": 53153266336017,
+        "sku": "TVARHONDURAS-CO-NA-12OZ",
+        "options": [
+          "Coarse",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153266368785,
+        "sku": "TVARHONDURAS-CO-NA-1LB",
+        "options": [
+          "Coarse",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153266401553,
+        "sku": "TVARHONDURAS-CO-NA-2LB",
+        "options": [
+          "Coarse",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153266434321,
+        "sku": "TVARHONDURAS-CO-NA-5LB",
+        "options": [
+          "Coarse",
+          "5 LB"
+        ]
+      },
+      {
+        "id": 53153266467089,
+        "sku": "TVARHONDURAS-CO-NA-12LB",
+        "options": [
+          "Coarse",
+          "12 LB"
+        ]
+      },
+      {
+        "id": 53153266499857,
+        "sku": "TVARHONDURAS-ES-NA-12OZ",
+        "options": [
+          "Espresso",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153266532625,
+        "sku": "TVARHONDURAS-ES-NA-1LB",
+        "options": [
+          "Espresso",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153266565393,
+        "sku": "TVARHONDURAS-ES-NA-2LB",
+        "options": [
+          "Espresso",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153266598161,
+        "sku": "TVARHONDURAS-ES-NA-5LB",
+        "options": [
+          "Espresso",
+          "5 LB"
+        ]
+      },
+      {
+        "id": 53153266630929,
+        "sku": "TVARHONDURAS-ES-NA-12LB",
+        "options": [
+          "Espresso",
+          "12 LB"
+        ]
+      },
+      {
+        "id": 53153266663697,
+        "sku": "TVARHONDURAS-ST-NA-12OZ",
+        "options": [
+          "Standard",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153266696465,
+        "sku": "TVARHONDURAS-ST-NA-1LB",
+        "options": [
+          "Standard",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153266729233,
+        "sku": "TVARHONDURAS-ST-NA-2LB",
+        "options": [
+          "Standard",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153266762001,
+        "sku": "TVARHONDURAS-ST-NA-5LB",
+        "options": [
+          "Standard",
+          "5 LB"
+        ]
+      },
+      {
+        "id": 53153266794769,
+        "sku": "TVARHONDURAS-ST-NA-12LB",
+        "options": [
+          "Standard",
+          "12 LB"
+        ]
+      },
+      {
+        "id": 53153266827537,
+        "sku": "TVARHONDURAS-WH-NA-12OZ",
+        "options": [
+          "Whole Bean",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153266860305,
+        "sku": "TVARHONDURAS-WH-NA-1LB",
+        "options": [
+          "Whole Bean",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153266893073,
+        "sku": "TVARHONDURAS-WH-NA-2LB",
+        "options": [
+          "Whole Bean",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153266925841,
+        "sku": "TVARHONDURAS-WH-NA-5LB",
+        "options": [
+          "Whole Bean",
+          "5 LB"
+        ]
+      },
+      {
+        "id": 53153266958609,
+        "sku": "TVARHONDURAS-WH-NA-12LB",
+        "options": [
+          "Whole Bean",
+          "12 LB"
+        ]
+      }
+    ],
+    "matchesOct11VariantIdsSkusOptions": true
+  },
+  {
+    "handle": "honduras-1",
+    "id": 10952740012305,
+    "variants": [
+      {
+        "id": 53153266991377,
+        "sku": "TVARHONDURAS-CO-NA-12OZ",
+        "options": [
+          "Coarse",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153267024145,
+        "sku": "TVARHONDURAS-CO-NA-1LB",
+        "options": [
+          "Coarse",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153267056913,
+        "sku": "TVARHONDURAS-CO-NA-2LB",
+        "options": [
+          "Coarse",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153267089681,
+        "sku": "TVARHONDURAS-CO-NA-5LB",
+        "options": [
+          "Coarse",
+          "5 LB"
+        ]
+      },
+      {
+        "id": 53153267122449,
+        "sku": "TVARHONDURAS-CO-NA-12LB",
+        "options": [
+          "Coarse",
+          "12 LB"
+        ]
+      },
+      {
+        "id": 53153267155217,
+        "sku": "TVARHONDURAS-ES-NA-12OZ",
+        "options": [
+          "Espresso",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153267187985,
+        "sku": "TVARHONDURAS-ES-NA-1LB",
+        "options": [
+          "Espresso",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153267220753,
+        "sku": "TVARHONDURAS-ES-NA-2LB",
+        "options": [
+          "Espresso",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153267253521,
+        "sku": "TVARHONDURAS-ES-NA-5LB",
+        "options": [
+          "Espresso",
+          "5 LB"
+        ]
+      },
+      {
+        "id": 53153267286289,
+        "sku": "TVARHONDURAS-ES-NA-12LB",
+        "options": [
+          "Espresso",
+          "12 LB"
+        ]
+      },
+      {
+        "id": 53153267319057,
+        "sku": "TVARHONDURAS-ST-NA-12OZ",
+        "options": [
+          "Standard",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153267351825,
+        "sku": "TVARHONDURAS-ST-NA-1LB",
+        "options": [
+          "Standard",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153267384593,
+        "sku": "TVARHONDURAS-ST-NA-2LB",
+        "options": [
+          "Standard",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153267417361,
+        "sku": "TVARHONDURAS-ST-NA-5LB",
+        "options": [
+          "Standard",
+          "5 LB"
+        ]
+      },
+      {
+        "id": 53153267450129,
+        "sku": "TVARHONDURAS-ST-NA-12LB",
+        "options": [
+          "Standard",
+          "12 LB"
+        ]
+      },
+      {
+        "id": 53153267482897,
+        "sku": "TVARHONDURAS-WH-NA-12OZ",
+        "options": [
+          "Whole Bean",
+          "12oz"
+        ]
+      },
+      {
+        "id": 53153267515665,
+        "sku": "TVARHONDURAS-WH-NA-1LB",
+        "options": [
+          "Whole Bean",
+          "1 LB"
+        ]
+      },
+      {
+        "id": 53153267548433,
+        "sku": "TVARHONDURAS-WH-NA-2LB",
+        "options": [
+          "Whole Bean",
+          "2 LB"
+        ]
+      },
+      {
+        "id": 53153267581201,
+        "sku": "TVARHONDURAS-WH-NA-5LB",
+        "options": [
+          "Whole Bean",
+          "5 LB"
+        ]
+      },
+      {
+        "id": 53153267613969,
+        "sku": "TVARHONDURAS-WH-NA-12LB",
+        "options": [
+          "Whole Bean",
+          "12 LB"
+        ]
+      }
+    ],
+    "matchesOct11VariantIdsSkusOptions": true
+  }
+]

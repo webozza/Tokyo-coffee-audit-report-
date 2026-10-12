@@ -2,95 +2,153 @@
 <html lang="en">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tokyo Nights Coffee — Client Closure QA | 11 October 2026</title>
+<title>Tokyo Nights Coffee — Final Handoff QA | 12 October 2026</title>
 <style>
 :root{color-scheme:light;--ink:#172332;--muted:#536171;--line:#d8dfe5}*{box-sizing:border-box}body{margin:0;background:#f4f6f8;color:var(--ink);font:16px/1.6 system-ui,sans-serif}main{max-width:1180px;margin:auto;padding:40px 24px}h1{font-size:clamp(30px,5vw,48px);line-height:1.15;margin:12px 0 20px}h2{margin-top:38px}a{color:#1260a0}header{border-top:6px solid #b21d22;padding-top:20px}.eyebrow{font-size:13px;letter-spacing:.12em;font-weight:700;text-transform:uppercase}.notice{background:#fff4da;border:1px solid #d9b763;border-radius:12px;padding:22px;margin:24px 0}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px}.card,figure{background:white;border:1px solid var(--line);border-radius:12px;padding:22px;margin:0}.card h3{margin:4px 0 12px}.status{font-size:13px;font-weight:750;color:#765008}.pass{color:#17633f}.muted{color:var(--muted)}figure img{width:100%;max-height:450px;object-fit:contain;object-position:top;background:#f5f5f5}figcaption{font-size:14px;margin-top:12px}.evidence{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}footer{border-top:1px solid var(--line);margin-top:36px;padding-top:22px;font-size:14px}@media(max-width:600px){main{padding:22px 16px}.card,figure{padding:16px}}
-</style>
+table{width:100%;border-collapse:collapse;background:#fff}th,td{text-align:left;vertical-align:top;padding:14px;border:1px solid var(--line)}th{background:#eaf0f5}.table-wrap{overflow-x:auto}pre{white-space:pre-wrap;overflow-wrap:anywhere;font:14px/1.7 system-ui}summary{cursor:pointer;font-weight:700}#procedures .card{margin:16px 0}li{margin:8px 0}@media(max-width:600px){table,tbody,tr,td{display:block;width:100%}thead{display:none}tr{border:1px solid var(--line);margin-bottom:16px}td{border:0;border-bottom:1px solid var(--line)}td::before{content:attr(data-label);display:block;font-weight:700;margin-bottom:5px}.table-wrap{overflow:visible}}</style>
 <main>
 <header>
-<div class="eyebrow">Tokyo Nights Coffee · 11 October 2026</div>
-<h1>Storefront QA update</h1>
+<div class="eyebrow">Tokyo Nights Coffee · 12 October 2026</div>
+<h1>Live storefront &amp; final handoff</h1>
 <p>Implementation, verification evidence, and remaining owner or supplier dependencies.</p>
 </header>
 <div class="notice">
-<strong>Status: implementation verified; project closure pending.</strong>
-<p>Shipping copy, origin wording, tea presentation and coffee filter display have been verified in the working theme <b>185649430801</b>. These theme changes are saved but are not yet published. Product protection and navigation were verified in the store.</p>
-<p>Remaining items: theme publication, Dripshipper’s response, a safely isolated checkout test, and permanent WZ sender authorization. Detailed results and screenshots follow.</p>
+<strong>Status: published development verified; external dependencies remain open.</strong>
+<p>Publication was completed before this review. On 12 October, the public storefront independently reports <b>185649430801 — COFFEE | JCI | WORKING | SEP 2026</b> as the main theme. Current live checks and screenshots are below.</p>
+<p>The client’s 12 October feedback offers conditional acceptance of the development subject to handoff. Supplier-dependent changes remain on hold. Controlled checkout and permanent WZ sender authorization/delivery are <b>not completed</b>; the requested permissions, safeguards and completion procedures are now documented.</p>
+<p><a href="#handoff">Final handoff and owner actions</a> · <a href="#procedures">Checkout and WZ procedures</a> · <a href="HANDOFF-STATUS-2026-10-12.md">Download detailed done/pending register (.md)</a></p>
 </div>
 <h2>Client requests and results</h2>
 <div class="cards">
 <article class="card">
 <div class="status pass">PASS — current store</div>
 <h3>1. Core Four protection</h3>
-<p>Ginza Velvet, Harajuku Heat and Shibuya Sunrise were already Draft. Admin records remain present; all three public URLs returned 404 with no Add to cart. No product records deleted or supplier data edited.</p>
+<p>Rechecked 12 October: Ginza Velvet, Harajuku Heat and Shibuya Sunrise remain Draft in Admin. All three public URLs return 404 without an add-to-cart form. No product records or supplier data were edited.</p>
 <p class="muted">
 <strong>Remaining:</strong> Keep unpublished until Dripshipper verifies exact products, variants, SKUs and inventory synchronization.</p>
 </article>
 <article class="card">
-<div class="status pass">PASS — draft; publishing pending</div>
+<div class="status pass">PASS — live checks verified 12 October</div>
 <h3>2. Shipping information</h3>
-<p>Verified configured U.S. standard shipping $4.95, free shipping at $35+, estimated 3–5 business days. Corrected draft homepage copy; draft announcement contains all three statements. Shipping rates unchanged.</p>
+<p>Live homepage and announcement show standard U.S. shipping $4.95, free U.S. shipping on orders of $35 or more, and estimated delivery in 3–5 business days. The October 11 Admin evidence records the shipping configuration; rates were not edited in this review.</p>
 <p class="muted">
-<strong>Remaining:</strong> Publish approved draft; recheck public homepage and announcement.</p>
+<strong>Remaining:</strong> No remaining copy-publication task. Checkout rate calculation remains part of the controlled test.</p>
 </article>
 <article class="card">
-<div class="status pass">PASS — draft; publishing pending</div>
+<div class="status pass">PASS — live checks verified 12 October</div>
 <h3>3. Product origin claims</h3>
-<p>Replaced “crafted in Tokyo” and “roasted to perfection in Tokyo” on the draft homepage with Tokyo-inspired branding. Reviewed 66 active coffee descriptions for related geographic manufacture/roast claims; no matching claims found.</p>
+<p>The live homepage uses Tokyo-inspired branding in place of the removed Tokyo manufacture/roast claims. The October 11 review of 66 active coffee descriptions found no matching claims; that catalog-wide description review was not repeated today.</p>
 <p class="muted">
-<strong>Remaining:</strong> Publish approved draft. This check does not certify geographic claims in product-image artwork or every historical page.</p>
+<strong>Remaining:</strong> This check does not certify geographic claims in product-image artwork or every historical page.</p>
 </article>
 <article class="card">
-<div class="status pass">PASS — draft; publishing pending</div>
+<div class="status pass">PASS — live checks verified 12 October</div>
 <h3>4. Tea presentation</h3>
-<p>All 11 active tea pages show Format / Loose Leaf. HTML inputs retain Grind / Loose leaf. Ginza Grey add-to-cart and cart page show Format: Loose Leaf. Coffee Grind label retained. No option values, SKUs or supplier synchronization settings changed.</p>
+<p>All 11 tea URLs were rechecked live for Format / Loose Leaf and original Grind / Loose leaf inputs. A fresh Ginza Grey add-to-cart check in an isolated browser context also displayed Format: Loose Leaf; all test cart items were removed without entering checkout. No supplier option values, SKUs or synchronization settings were changed.</p>
 <p class="muted">
-<strong>Remaining:</strong> Publish approved draft. Shopify-hosted checkout may retain original supplier option wording.</p>
+<strong>Remaining:</strong> Shopify-hosted checkout may retain original supplier option wording; a completed checkout is not certified.</p>
 </article>
 <article class="card">
-<div class="status pass">PASS — draft; live presentation pending</div>
+<div class="status pass">PASS — live filters verified 12 October</div>
 <h3>5. Whole Bean / Ground Coffee filters</h3>
-<p>Installed official Shopify Search &amp; Discovery. Grouped existing whole-bean and ground-coffee tags using OR logic. Full pagination returned exactly 54 Whole Bean and 60 Ground Coffee products. Existing variants cross-checked; tea, capsules, pods and instant excluded. Draft shows only the two format choices. Mobile Whole Bean selection also returned 54 of 77 products; tea collection has no Coffee format filter.</p>
+<p>Live coffee-format controls show only Whole Bean and Ground Coffee. Applied live filters return displayed counts of 54 and 60 out of 77 products. October 11 evidence includes the full paginated result sets and catalog variant cross-check; those exhaustive sets are distinguished from today’s live UI checks.</p>
 <p class="muted">
-<strong>Remaining:</strong> App/filter configuration is store-wide. The current live theme can show additional tag choices until the verified working theme is published. No supplier integration changes were made; upstream synchronization was not exercised.</p>
+<strong>Remaining:</strong> No remaining theme-publication dependency. Upstream supplier synchronization has not been exercised.</p>
 </article>
 <article class="card">
 <div class="status pass">PASS — store menu saved</div>
 <h3>6. Discovery Boxes navigation</h3>
-<p>Saved Discovery Boxes as a top-level main-menu link before Contact Us; collection target is /collections/discovery-boxes. Admin reload and desktop/mobile storefront navigation verified; collection contains three discovery products.</p>
+<p>Discovery Boxes appears before Contact Us in live navigation and points to /collections/discovery-boxes. The live collection contains three discovery products; current mobile evidence is included below.</p>
 <p class="muted">
 <strong>Remaining:</strong> No remaining menu configuration task.</p>
 </article>
 <article class="card">
 <div class="status ">REQUEST SENT — reply pending</div>
 <h3>7. Supplier verification</h3>
-<p>Submitted verification request using Dripshipper’s Shopify Get support form. Asked for exact Mint/Honduras duplicate mappings, three protected Core Four fulfillment options and safe test-order handling. The request was submitted through the support form; no ticket number or supplier reply was available at the time of this audit.</p>
+<p>Submitted verification request using Dripshipper’s Shopify Get support form. Asked for exact Mint/Honduras duplicate mappings, three protected Core Four fulfillment options and safe test-order handling. The October 11 record says the support form dismissed after Send without an error; it displayed no ticket ID. No subsequent response has been supplied or verified for this handoff. The registered store mailbox was not checked in this session. See the full request and response register below.</p>
 <p class="muted">
 <strong>Remaining:</strong> Dripshipper must reply. Submission is not supplier confirmation. Preserve duplicate products and supplier-linked records.</p>
 </article>
 <article class="card">
 <div class="status ">BLOCKED — not tested</div>
 <h3>8. Controlled checkout transaction</h3>
-<p>Automatic order fulfillment is enabled. Payment-provider/test-mode controls are unavailable in the current Payments session. No checkout transaction or test order was submitted. Cart-only test passed; its test item was removed.</p>
+<p>The October 11 review recorded automatic fulfillment enabled and payment/test-mode controls inaccessible. No transaction or order was submitted in this review. The exact access requirements, supplier-isolation gates, test sequence and restoration steps are documented in the handoff.</p>
 <p class="muted">
 <strong>Remaining:</strong> Need accessible approved test-payment controls and confirmed supplier isolation before testing. Then verify payment, order creation and confirmation-email receipt. No real charge or supplier fulfillment authorized.</p>
 </article>
 <article class="card">
 <div class="status ">DOCUMENTED — owner dependency</div>
 <h3>9. WZ Back In Stock</h3>
-<p>Current WZ setup reports 1 of 2 complete and sender email not connected. Client accepted temporary testing arrangement; no permanent delivery claim is made. No sender credentials changed.</p>
+<p>Rechecked 12 October: WZ reports 1 of 2 setup steps complete; Gmail is Not connected. SMTP host, username and From Address are unconfigured. Existing configuration was preserved. The client reports deployment connectivity limitations; permanent authorization and real delivery remain pending.</p>
 <p class="muted">
 <strong>Remaining:</strong> Owner connects/authorizes permanent Gmail or SMTP sender. After connection, verify actual notification delivery.</p>
 </article>
 </div>
-<h2>Verification scope</h2>
-<p>Browser checks covered protected product availability, configured shipping, draft homepage copy, all 11 tea product labels and original input values, a tea cart-only flow, full pagination of both coffee filters, and Discovery Boxes navigation. Existing coffee variants were cross-checked against the filter tags. Shopify Liquid/schema validation passed. No order, payment or confirmation-email delivery was tested.</p>
-<p>Product records, SKUs, supplier option values, inventory and integration settings were preserved. Empty draft Core Four placeholder cards were removed. Geographic wording checks covered the draft homepage and active coffee descriptions; this does not certify claims in image artwork or every historical page.</p>
+<h2>Verification scope and evidence dates</h2>
+<p>October 12 live checks cover published theme identity, homepage copy, protected product URLs and Admin status, all 11 tea pages, coffee filter choices/counts, Discovery Boxes, and WZ authorization status. All four Mint/Honduras records retain the same product IDs, variant IDs, SKUs and options as the October 11 baseline. <a href="evidence-2026-10-12/live-verification.json">Current live-check record</a> · <a href="evidence-2026-10-12/supplier-record-check.json">Supplier-record comparison</a>.</p>
+<p>The October 11 evidence below documents prior exhaustive filter pagination, catalog cross-checks, cart-only testing, shipping settings and Liquid/schema validation. No real payment, completed test order, order-confirmation delivery, supplier fulfillment or permanent WZ email delivery is counted as passed. No product, SKU, inventory, payment, fulfillment or integration settings were edited in this review.</p>
 <p>
 <a href="evidence-2026-10-11/filter-verification.json">Filter result sets</a> · <a href="evidence-2026-10-11/tea-verification.json">Tea input checks</a> · <a href="evidence-2026-10-11/product-protection.json">Protected product checks</a> · <a href="evidence-2026-10-11/catalog-variant-crosscheck.json">Variant cross-check</a> · <a href="evidence-2026-10-11/supplier-request.txt">Supplier request submitted</a>
 </p>
-<h2>Verification screenshots</h2>
-<p class="muted">Select an image to inspect its original resolution. Storefront screenshots are draft preview evidence unless stated otherwise.</p>
+<section id="handoff">
+<h2>Final handoff checklist</h2>
+<div class="table-wrap"><table><thead><tr><th>Deliverable</th><th>Status and evidence</th><th>Remaining owner action</th></tr></thead><tbody>
+<tr><td data-label="Deliverable">Published theme</td><td data-label="Status and evidence">Verified live: 185649430801, COFFEE | JCI | WORKING | SEP 2026; role main.</td><td data-label="Remaining owner action">Publication itself was completed by the user, outside this task.</td></tr>
+<tr><td data-label="Deliverable">Backup and rollback record</td><td data-label="Status and evidence">Previous live theme in the October 11 record: 182090334481, “coffee”. This is a historical candidate, not a verified backup.</td><td data-label="Remaining owner action">Attach the already-created backup ID/name or ZIP, timestamp/location, and pre-publication version-comparison evidence. These details were not supplied.</td></tr>
+<tr><td data-label="Deliverable">Live screenshots and QA</td><td data-label="Status and evidence">Current desktop/mobile screenshots and explicit pass/pending checklist included.</td><td data-label="Remaining owner action">Retain separate dates for historical and current evidence.</td></tr>
+<tr><td data-label="Deliverable">Supplier protection</td><td data-label="Status and evidence">Three Core Four drafts preserved; four Mint/Honduras product and variant/SKU records verified.</td><td data-label="Remaining owner action">Keep changes on hold until Dripshipper confirms exact mappings and safe test handling.</td></tr>
+<tr><td data-label="Deliverable">Supplier support</td><td data-label="Status and evidence">Original request and submission evidence included. No ticket ID displayed.</td><td data-label="Remaining owner action">Check the store mailbox and attach any acknowledgement/reply; inbox was not inspected here.</td></tr>
+<tr><td data-label="Deliverable">Checkout testing</td><td data-label="Status and evidence">Permissions, safeguards and future test procedure complete. Transaction not run.</td><td data-label="Remaining owner action">Owner grants access and approves test window; supplier confirms isolation before testing.</td></tr>
+<tr><td data-label="Deliverable">WZ Back In Stock</td><td data-label="Status and evidence">Configuration preserved; authorization and delivery procedure complete.</td><td data-label="Remaining owner action">Owner authorizes permanent sender after connectivity is resolved; verify actual controlled delivery.</td></tr>
+<tr><td data-label="Deliverable">Original data and integrations</td><td data-label="Status and evidence">No product, supplier SKU, inventory or integration changes performed in this review.</td><td data-label="Remaining owner action">Supplier synchronization remains untested; do not infer it from storefront checks.</td></tr>
+</tbody></table></div>
+<p><b>Rollback handoff:</b> the owner should verify the intended pre-publication backup in Online Store → Themes, preview it, confirm its identity, record the current live theme, and publish the confirmed backup only if rollback is authorized. Recheck homepage, products, cart, navigation and app embed. Theme rollback does not revert store-wide menus, filters, product data, payments or integrations. Full procedure and missing backup fields are in the <a href="HANDOFF-STATUS-2026-10-12.md">handoff register</a>.</p>
+<h2>Supplier request and dependency register</h2>
+<p><b>Submitted 11 October 2026</b> through Shopify’s Dripshipper Get support form, per the prior tracker. Exact time and ticket ID were not recorded. <a href="evidence-2026-10-11/supplier-request-result.png">Submission-result evidence</a> · <a href="evidence-2026-10-11/supplier-request.txt">Exact original request</a>.</p>
+<p><b>Response status:</b> no reply is supplied or verified in the project evidence as of this handoff. This does not establish that no reply exists in the registered store mailbox. The owner must attach any response, its date and ticket reference. No new support message was sent during this review.</p>
+<details><summary>Read the exact Dripshipper request</summary><pre>Hello Dripshipper Support,
+
+We are completing supplier verification for Tokyo Nights Coffee (0c3u4u-pe.myshopify.com; admin store tokyo-nights-coffee). Please confirm the exact Shopify Product ID you actively synchronize for each duplicate pair recorded in our audit:
+Mint: mint — 10952738308369; mint-1 — 10952740372753.
+Honduras: honduras — 10952739979537; honduras-1 — 10952740012305.
+
+Please also confirm fulfillment options for Ginza Velvet, Harajuku Heat and Shibuya Sunrise, including the exact corresponding supplier products (if any), supported Whole Bean/Ground variants, supplier SKUs and inventory synchronization requirements. We will not guess mappings from similar descriptions.
+
+For a controlled Shopify checkout test, can a Shopify test order trigger any Dripshipper import, charge or fulfillment? Please confirm the supported method to guarantee no real supplier fulfillment.
+
+This is a verification request only. Please do not modify, delete, merge, relink or fulfill any product/order on our behalf.
+
+Thank you.</pre></details>
+<p><b>Protected IDs:</b> Mint 10952738308369 / 10952740372753; Honduras 10952739979537 / 10952740012305. Ginza Velvet 10979128443153; Harajuku Heat 10979129360657; Shibuya Sunrise 10979127787793. Do not merge, delete, relink or publish protected records based on similar names.</p>
+</section>
+<section id="procedures"><h2>Required completion procedures</h2>
+<p>The complete step-by-step procedures, required permissions, pass criteria and restoration controls are in the <a href="HANDOFF-STATUS-2026-10-12.md">downloadable handoff register</a>. Documentation is complete; these external tests remain pending.</p>
+<article class="card"><h3>Controlled checkout — execution pending</h3>
+<ol><li>Owner provides payment-provider test-mode access, order review/cancellation access, approved app/settings access and a controlled inbox. Agree on an isolated test environment or restricted maintenance window.</li>
+<li>Record existing settings. Obtain written Dripshipper isolation instructions and verify that no app import, charge or fulfillment can occur. Shopify automatic fulfillment off or a TEST tag alone is insufficient.</li>
+<li>Use only an approved test gateway and its test card values. For configured Shopify Payments: Settings → Payments → Manage → Test mode → Enable test mode → Save. Never use a real card or manual-payment workaround.</li>
+<li>Use an approved isolated item, check variant, quantity, shipping and totals, then submit one simulated order only after the safeguards are proven. Verify test-marked order/payment result and actual confirmation-email receipt.</li>
+<li>Confirm no supplier activity, cancel and clean up the test order and its inventory effects before reconnecting fulfillment, restore recorded settings and disable test mode, then verify ordinary checkout availability without a live payment.</li></ol>
+<p><b>Stop condition:</b> missing access, uncertain isolation or an unavailable safe test window. No real payment or supplier fulfillment is authorized. <a href="https://help.shopify.com/en/manual/checkout-settings/test-orders/processing-test-order">Shopify test-order precautions</a> · <a href="https://help.shopify.com/en/manual/payments/shopify-payments/testing-shopify-payments">Shopify Payments test-mode instructions</a>.</p></article>
+<article class="card"><h3>WZ Back In Stock — owner authorization pending</h3>
+<ol><li>Owner resolves deployment/OAuth connectivity if necessary. Open WZ → Open sender email.</li><li>Choose Gmail → Connect Gmail and complete owner consent, or enter approved provider-issued Manual SMTP settings through the app. Verify connected status and the intended From Address; keep credentials out of the report.</li><li>Check the Alert email template send method and preserve existing embed, content and waitlists. Current UI states Manual SMTP is used for Custom alert email.</li><li>With approval, use an isolated non-supplier fixture and controlled inbox to verify signup, restock trigger and actual received email. A test-send, if available, checks delivery but does not alone certify the restock workflow.</li><li>Record timestamps, sender, test fixture and redacted receipt; remove only test data. Do not alter supplier stock or trigger customer waitlists.</li></ol>
+<p><b>Pass requires:</b> permanent sender connected, correct From Address and actual controlled restock-email receipt. Setup preview or authorization alone is not delivery proof.</p></article></section>
+<h2>October 12 live verification screenshots</h2><p class="muted">Current public storefront captures without preview-theme URLs. Admin and WZ captures are labelled separately. Select an image for full resolution.</p><div class="evidence">
+<figure><a href="evidence-2026-10-12/live-home-desktop.png"><img loading="lazy" src="evidence-2026-10-12/live-home-desktop.png" alt="Live homepage — desktop"></a><figcaption>Live homepage — desktop</figcaption></figure>
+<figure><a href="evidence-2026-10-12/live-home-mobile.png"><img loading="lazy" src="evidence-2026-10-12/live-home-mobile.png" alt="Live homepage — mobile"></a><figcaption>Live homepage — mobile</figcaption></figure>
+<figure><a href="evidence-2026-10-12/live-coffee-filter-desktop.png"><img loading="lazy" src="evidence-2026-10-12/live-coffee-filter-desktop.png" alt="Live coffee format choices"></a><figcaption>Live coffee format choices</figcaption></figure>
+<figure><a href="evidence-2026-10-12/live-whole-bean.png"><img loading="lazy" src="evidence-2026-10-12/live-whole-bean.png" alt="Live Whole Bean — 54 of 77"></a><figcaption>Live Whole Bean — 54 of 77</figcaption></figure>
+<figure><a href="evidence-2026-10-12/live-ground-coffee.png"><img loading="lazy" src="evidence-2026-10-12/live-ground-coffee.png" alt="Live Ground Coffee — 60 of 77"></a><figcaption>Live Ground Coffee — 60 of 77</figcaption></figure>
+<figure><a href="evidence-2026-10-12/live-tea-mobile.png"><img loading="lazy" src="evidence-2026-10-12/live-tea-mobile.png" alt="Live Ginza Grey — Format / Loose Leaf"></a><figcaption>Live Ginza Grey — Format / Loose Leaf</figcaption></figure>
+<figure><a href="evidence-2026-10-12/live-tea-cart.png"><img loading="lazy" src="evidence-2026-10-12/live-tea-cart.png" alt="Live cart-only verification — Format: Loose Leaf"></a><figcaption>Live cart-only verification — test items removed; no checkout submitted</figcaption></figure>
+<figure><a href="evidence-2026-10-12/live-discovery-mobile.png"><img loading="lazy" src="evidence-2026-10-12/live-discovery-mobile.png" alt="Live Discovery Boxes — mobile"></a><figcaption>Live Discovery Boxes — mobile</figcaption></figure>
+<figure><a href="evidence-2026-10-12/live-navigation-mobile.png"><img loading="lazy" src="evidence-2026-10-12/live-navigation-mobile.png" alt="Live mobile navigation — Discovery Boxes before Contact Us"></a><figcaption>Live mobile navigation — Discovery Boxes before Contact Us</figcaption></figure>
+<figure><a href="evidence-2026-10-12/protected-products-admin.png"><img loading="lazy" src="evidence-2026-10-12/protected-products-admin.png" alt="Admin — three Core Four records remain Draft"></a><figcaption>Admin — three Core Four records remain Draft</figcaption></figure>
+<figure><a href="evidence-2026-10-12/wz-setup-status.png"><img loading="lazy" src="evidence-2026-10-12/wz-setup-status.png" alt="WZ — setup 1 of 2 complete"></a><figcaption>WZ — setup 1 of 2 complete</figcaption></figure>
+<figure><a href="evidence-2026-10-12/wz-gmail-not-connected.png"><img loading="lazy" src="evidence-2026-10-12/wz-gmail-not-connected.png" alt="WZ — Gmail Not connected"></a><figcaption>WZ — Gmail Not connected</figcaption></figure>
+</div>
+<h2>October 11 implementation evidence</h2>
+<p class="muted">Select an image to inspect its original resolution. The following October 11 storefront screenshots are historical draft previews unless stated otherwise; they are not presented as current live captures.</p>
 <div class="evidence">
 <figure>
 <a href="evidence-2026-10-11/ginza-draft-admin.png">
@@ -183,6 +241,6 @@
 <figcaption>WZ sender authorization dependency</figcaption>
 </figure>
 </div>
-<footer>Verified 11 October 2026. PASS applies to the stated check and environment. Pending dependencies are not counted as passes.</footer>
+<footer>Updated 12 October 2026. Current live verification and historical October 11 evidence are labelled separately. PASS applies only to the stated scope. External dependencies remain pending; formal acceptance remains with the client.</footer>
 </main>
 </html>
