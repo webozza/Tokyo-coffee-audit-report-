@@ -151,6 +151,8 @@ Hi Karlton,
 
 The published storefront has been rechecked, and the audit now includes current live screenshots, the completed QA checklist, the original Dripshipper support request, and a detailed dependency register. The three unpublished Core Four products and existing Mint/Honduras records remain preserved; their supplier-linked variant IDs, SKUs and option values were not changed.
 
+The Dripshipper verification request was submitted through Shopify’s support form, with replies directed to your registered store email address. Could you please check your inbox and spam folder and let me know if you have received any acknowledgement, ticket number or response? Please forward anything you receive so I can add it to the audit. I am also checking on my side. Supplier-dependent changes will remain on hold until we receive and verify their confirmation.
+
 The handoff also documents the permissions, safety controls and exact steps for the deferred checkout test and permanent WZ sender authorization/delivery test. No real payment or supplier fulfillment was triggered. Supplier confirmation, controlled checkout execution and permanent WZ delivery remain explicitly open pending the prerequisites listed in the report.
 
 Please review the updated audit at https://tokyocoffeeauditreport.vercel.app/audit-2026-10-08.html. The publication backup reference and any Dripshipper reply should be attached to the handoff before representing those records as complete. The completed development scope is ready for your review with these dependencies disclosed.
