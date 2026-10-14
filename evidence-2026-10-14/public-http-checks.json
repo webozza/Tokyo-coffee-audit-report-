@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-10-14T05:01:52.897546+00:00",
+  "method": "Anonymous HTTP GET; not authenticated Admin or browser interaction",
+  "checks": [
+    {
+      "url": "https://tokyocoffeeauditreport.vercel.app/audit-2026-10-08.html",
+      "status": 200,
+      "title": [
+        "Tokyo Nights Coffee \u2014 Final Handoff QA | 12 October 2026"
+      ],
+      "addToCartForm": false,
+      "matchesLocalOct12Report": true
+    },
+    {
+      "url": "https://tokyonightscoffee.com/",
+      "status": 200,
+      "title": [
+        "\n      Tokyo Nights Coffee\n"
+      ],
+      "addToCartForm": false,
+      "theme": [
+        "{\"name\":\"COFFEE | JCI | WORKING | SEP 2026\",\"id\":185649430801,\"schema_name\":\"Dawn\",\"schema_version\":\"15.2.0\",\"theme_store_id\":null,\"role\":\"main\"}"
+      ]
+    },
+    {
+      "url": "https://tokyonightscoffee.com/products/ginza-velvet",
+      "status": 404,
+      "title": [
+        "\n      404 Not Found\n &ndash; Tokyo Nights Coffee"
+      ],
+      "addToCartForm": false
+    },
+    {
+      "url": "https://tokyonightscoffee.com/products/harajuku-heat",
+      "status": 404,
+      "title": [
+        "\n      404 Not Found\n &ndash; Tokyo Nights Coffee"
+      ],
+      "addToCartForm": false
+    },
+    {
+      "url": "https://tokyonightscoffee.com/products/shibuya-sunrise",
+      "status": 404,
+      "title": [
+        "\n      404 Not Found\n &ndash; Tokyo Nights Coffee"
+      ],
+      "addToCartForm": false
+    }
+  ],
+  "limitations": "No current Admin/SKU comparison, WZ delivery, cart or checkout testing."
+}

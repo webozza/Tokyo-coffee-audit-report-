@@ -1,0 +1,343 @@
+{
+  "checkedAt": "2026-10-14T05:23:55.824Z",
+  "method": "Read-only Shopify bulk editor; no fields edited; Save remained disabled",
+  "limitations": "SKU sets compared; supplier private mapping/sync not tested. Variant IDs remain from October 12 baseline.",
+  "products": [
+    {
+      "handle": "honduras-1",
+      "productId": 10952740012305,
+      "variantCount": 20,
+      "skuSetMatchesOct12": true,
+      "saveDisabled": true,
+      "rows": [
+        {
+          "variantLabel": "Honduras - Coarse / 12oz",
+          "sku": "TVARHONDURAS-CO-NA-12OZ"
+        },
+        {
+          "variantLabel": "Honduras - Coarse / 1 LB",
+          "sku": "TVARHONDURAS-CO-NA-1LB"
+        },
+        {
+          "variantLabel": "Honduras - Coarse / 2 LB",
+          "sku": "TVARHONDURAS-CO-NA-2LB"
+        },
+        {
+          "variantLabel": "Honduras - Coarse / 5 LB",
+          "sku": "TVARHONDURAS-CO-NA-5LB"
+        },
+        {
+          "variantLabel": "Honduras - Coarse / 12 LB",
+          "sku": "TVARHONDURAS-CO-NA-12LB"
+        },
+        {
+          "variantLabel": "Honduras - Espresso / 12oz",
+          "sku": "TVARHONDURAS-ES-NA-12OZ"
+        },
+        {
+          "variantLabel": "Honduras - Espresso / 1 LB",
+          "sku": "TVARHONDURAS-ES-NA-1LB"
+        },
+        {
+          "variantLabel": "Honduras - Espresso / 2 LB",
+          "sku": "TVARHONDURAS-ES-NA-2LB"
+        },
+        {
+          "variantLabel": "Honduras - Espresso / 5 LB",
+          "sku": "TVARHONDURAS-ES-NA-5LB"
+        },
+        {
+          "variantLabel": "Honduras - Espresso / 12 LB",
+          "sku": "TVARHONDURAS-ES-NA-12LB"
+        },
+        {
+          "variantLabel": "Honduras - Standard / 12oz",
+          "sku": "TVARHONDURAS-ST-NA-12OZ"
+        },
+        {
+          "variantLabel": "Honduras - Standard / 1 LB",
+          "sku": "TVARHONDURAS-ST-NA-1LB"
+        },
+        {
+          "variantLabel": "Honduras - Standard / 2 LB",
+          "sku": "TVARHONDURAS-ST-NA-2LB"
+        },
+        {
+          "variantLabel": "Honduras - Standard / 5 LB",
+          "sku": "TVARHONDURAS-ST-NA-5LB"
+        },
+        {
+          "variantLabel": "Honduras - Standard / 12 LB",
+          "sku": "TVARHONDURAS-ST-NA-12LB"
+        },
+        {
+          "variantLabel": "Honduras - Whole Bean / 12oz",
+          "sku": "TVARHONDURAS-WH-NA-12OZ"
+        },
+        {
+          "variantLabel": "Honduras - Whole Bean / 1 LB",
+          "sku": "TVARHONDURAS-WH-NA-1LB"
+        },
+        {
+          "variantLabel": "Honduras - Whole Bean / 2 LB",
+          "sku": "TVARHONDURAS-WH-NA-2LB"
+        },
+        {
+          "variantLabel": "Honduras - Whole Bean / 5 LB",
+          "sku": "TVARHONDURAS-WH-NA-5LB"
+        },
+        {
+          "variantLabel": "Honduras - Whole Bean / 12 LB",
+          "sku": "TVARHONDURAS-WH-NA-12LB"
+        }
+      ],
+      "variantLabelsAndSkusMatchOct12": true
+    },
+    {
+      "handle": "honduras",
+      "productId": 10952739979537,
+      "variantCount": 20,
+      "skuSetMatchesOct12": true,
+      "saveDisabled": true,
+      "rows": [
+        {
+          "variantLabel": "Honduras - Coarse / 12oz",
+          "sku": "TVARHONDURAS-CO-NA-12OZ"
+        },
+        {
+          "variantLabel": "Honduras - Coarse / 1 LB",
+          "sku": "TVARHONDURAS-CO-NA-1LB"
+        },
+        {
+          "variantLabel": "Honduras - Coarse / 2 LB",
+          "sku": "TVARHONDURAS-CO-NA-2LB"
+        },
+        {
+          "variantLabel": "Honduras - Coarse / 5 LB",
+          "sku": "TVARHONDURAS-CO-NA-5LB"
+        },
+        {
+          "variantLabel": "Honduras - Coarse / 12 LB",
+          "sku": "TVARHONDURAS-CO-NA-12LB"
+        },
+        {
+          "variantLabel": "Honduras - Espresso / 12oz",
+          "sku": "TVARHONDURAS-ES-NA-12OZ"
+        },
+        {
+          "variantLabel": "Honduras - Espresso / 1 LB",
+          "sku": "TVARHONDURAS-ES-NA-1LB"
+        },
+        {
+          "variantLabel": "Honduras - Espresso / 2 LB",
+          "sku": "TVARHONDURAS-ES-NA-2LB"
+        },
+        {
+          "variantLabel": "Honduras - Espresso / 5 LB",
+          "sku": "TVARHONDURAS-ES-NA-5LB"
+        },
+        {
+          "variantLabel": "Honduras - Espresso / 12 LB",
+          "sku": "TVARHONDURAS-ES-NA-12LB"
+        },
+        {
+          "variantLabel": "Honduras - Standard / 12oz",
+          "sku": "TVARHONDURAS-ST-NA-12OZ"
+        },
+        {
+          "variantLabel": "Honduras - Standard / 1 LB",
+          "sku": "TVARHONDURAS-ST-NA-1LB"
+        },
+        {
+          "variantLabel": "Honduras - Standard / 2 LB",
+          "sku": "TVARHONDURAS-ST-NA-2LB"
+        },
+        {
+          "variantLabel": "Honduras - Standard / 5 LB",
+          "sku": "TVARHONDURAS-ST-NA-5LB"
+        },
+        {
+          "variantLabel": "Honduras - Standard / 12 LB",
+          "sku": "TVARHONDURAS-ST-NA-12LB"
+        },
+        {
+          "variantLabel": "Honduras - Whole Bean / 12oz",
+          "sku": "TVARHONDURAS-WH-NA-12OZ"
+        },
+        {
+          "variantLabel": "Honduras - Whole Bean / 1 LB",
+          "sku": "TVARHONDURAS-WH-NA-1LB"
+        },
+        {
+          "variantLabel": "Honduras - Whole Bean / 2 LB",
+          "sku": "TVARHONDURAS-WH-NA-2LB"
+        },
+        {
+          "variantLabel": "Honduras - Whole Bean / 5 LB",
+          "sku": "TVARHONDURAS-WH-NA-5LB"
+        },
+        {
+          "variantLabel": "Honduras - Whole Bean / 12 LB",
+          "sku": "TVARHONDURAS-WH-NA-12LB"
+        }
+      ],
+      "variantLabelsAndSkusMatchOct12": true
+    },
+    {
+      "handle": "mint-1",
+      "productId": 10952740372753,
+      "variantCount": 17,
+      "skuSetMatchesOct12": true,
+      "saveDisabled": true,
+      "rows": [
+        {
+          "variantLabel": "Mint - Coarse / 12oz",
+          "sku": "TVARMINT-CO-NA-12OZ"
+        },
+        {
+          "variantLabel": "Mint - Coarse / 1 LB",
+          "sku": "TVARMINT-CO-NA-1LB"
+        },
+        {
+          "variantLabel": "Mint - Coarse / 2 LB",
+          "sku": "TVARMINT-CO-NA-2LB"
+        },
+        {
+          "variantLabel": "Mint - Coarse / 5 LB",
+          "sku": "TVARMINT-CO-NA-5LB"
+        },
+        {
+          "variantLabel": "Mint - Coarse / 12 LB",
+          "sku": "TVARMINT-CO-NA-12LB"
+        },
+        {
+          "variantLabel": "Mint - Espresso / 12oz",
+          "sku": "TVARMINT-ES-NA-12OZ"
+        },
+        {
+          "variantLabel": "Mint - Espresso / 1 LB",
+          "sku": "TVARMINT-ES-NA-1LB"
+        },
+        {
+          "variantLabel": "Mint - Espresso / 2 LB",
+          "sku": "TVARMINT-ES-NA-2LB"
+        },
+        {
+          "variantLabel": "Mint - Espresso / 5 LB",
+          "sku": "TVARMINT-ES-NA-5LB"
+        },
+        {
+          "variantLabel": "Mint - Standard / 12oz",
+          "sku": "TVARMINT-ST-NA-12OZ"
+        },
+        {
+          "variantLabel": "Mint - Standard / 1 LB",
+          "sku": "TVARMINT-ST-NA-1LB"
+        },
+        {
+          "variantLabel": "Mint - Standard / 2 LB",
+          "sku": "TVARMINT-ST-NA-2LB"
+        },
+        {
+          "variantLabel": "Mint - Standard / 5 LB",
+          "sku": "TVARMINT-ST-NA-5LB"
+        },
+        {
+          "variantLabel": "Mint - Whole Bean / 12oz",
+          "sku": "TVARMINT-WH-NA-12OZ"
+        },
+        {
+          "variantLabel": "Mint - Whole Bean / 1 LB",
+          "sku": "TVARMINT-WH-NA-1LB"
+        },
+        {
+          "variantLabel": "Mint - Whole Bean / 2 LB",
+          "sku": "TVARMINT-WH-NA-2LB"
+        },
+        {
+          "variantLabel": "Mint - Whole Bean / 5 LB",
+          "sku": "TVARMINT-WH-NA-5LB"
+        }
+      ],
+      "variantLabelsAndSkusMatchOct12": true
+    },
+    {
+      "handle": "mint",
+      "productId": 10952738308369,
+      "variantCount": 17,
+      "skuSetMatchesOct12": true,
+      "saveDisabled": true,
+      "rows": [
+        {
+          "variantLabel": "Mint - Coarse / 12oz",
+          "sku": "TVARMINT-CO-NA-12OZ"
+        },
+        {
+          "variantLabel": "Mint - Coarse / 1 LB",
+          "sku": "TVARMINT-CO-NA-1LB"
+        },
+        {
+          "variantLabel": "Mint - Coarse / 2 LB",
+          "sku": "TVARMINT-CO-NA-2LB"
+        },
+        {
+          "variantLabel": "Mint - Coarse / 5 LB",
+          "sku": "TVARMINT-CO-NA-5LB"
+        },
+        {
+          "variantLabel": "Mint - Coarse / 12 LB",
+          "sku": "TVARMINT-CO-NA-12LB"
+        },
+        {
+          "variantLabel": "Mint - Espresso / 12oz",
+          "sku": "TVARMINT-ES-NA-12OZ"
+        },
+        {
+          "variantLabel": "Mint - Espresso / 1 LB",
+          "sku": "TVARMINT-ES-NA-1LB"
+        },
+        {
+          "variantLabel": "Mint - Espresso / 2 LB",
+          "sku": "TVARMINT-ES-NA-2LB"
+        },
+        {
+          "variantLabel": "Mint - Espresso / 5 LB",
+          "sku": "TVARMINT-ES-NA-5LB"
+        },
+        {
+          "variantLabel": "Mint - Standard / 12oz",
+          "sku": "TVARMINT-ST-NA-12OZ"
+        },
+        {
+          "variantLabel": "Mint - Standard / 1 LB",
+          "sku": "TVARMINT-ST-NA-1LB"
+        },
+        {
+          "variantLabel": "Mint - Standard / 2 LB",
+          "sku": "TVARMINT-ST-NA-2LB"
+        },
+        {
+          "variantLabel": "Mint - Standard / 5 LB",
+          "sku": "TVARMINT-ST-NA-5LB"
+        },
+        {
+          "variantLabel": "Mint - Whole Bean / 12oz",
+          "sku": "TVARMINT-WH-NA-12OZ"
+        },
+        {
+          "variantLabel": "Mint - Whole Bean / 1 LB",
+          "sku": "TVARMINT-WH-NA-1LB"
+        },
+        {
+          "variantLabel": "Mint - Whole Bean / 2 LB",
+          "sku": "TVARMINT-WH-NA-2LB"
+        },
+        {
+          "variantLabel": "Mint - Whole Bean / 5 LB",
+          "sku": "TVARMINT-WH-NA-5LB"
+        }
+      ],
+      "variantLabelsAndSkusMatchOct12": true
+    }
+  ]
+}

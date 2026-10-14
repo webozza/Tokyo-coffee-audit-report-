@@ -1,0 +1,66 @@
+{
+  "reviewDate": "2026-10-14",
+  "supplierSource": "User-supplied screenshots of October 14 client messages; forwarded text attributed to Raheel at Dripshipper. Original email headers/date/ticket not supplied. Screenshots not republished.",
+  "supplierFindings": [
+    "Supplier SKU recognition rather than Shopify product IDs",
+    "Imports receive supplier SKUs",
+    "Recognized orders sync; payment for coffee precedes processing/shipping"
+  ],
+  "stillUnconfirmed": [
+    "Manual mapping for protected products",
+    "Supported Whole Bean/Ground variants",
+    "Duplicate supplier SKU handling",
+    "Safe checkout isolation"
+  ],
+  "wzSource": "https://apps.shopify.com/wz-back-in-stock",
+  "wzSourceChecked": "2026-10-14",
+  "wzLimitations": "Listing advertises SMTP/Gmail, not a verified lossless switch or default sender. Installed plan/provider cost requires confirmation.",
+  "reportValidation": {
+    "method": "Standalone Playwright with installed Chrome; local file",
+    "viewports": [
+      "1440x1000",
+      "390x844"
+    ],
+    "horizontalOverflow": false,
+    "brokenImages": 0,
+    "localLinksAndAnchors": "pass",
+    "indexMatchesReport": true
+  },
+  "mutations": "Local report/documentation only. No store changes, messages, purchases, payments or orders.",
+  "deployment": "Not deployed during this review.",
+  "resendReview": {
+    "sources": [
+      "https://resend.com/pricing",
+      "https://resend.com/docs/send-with-smtp",
+      "https://resend.com/docs/knowledge-base/account-quotas-and-limits"
+    ],
+    "checked": "2026-10-14",
+    "freeLimits": {
+      "daily": 100,
+      "monthly": 3000
+    },
+    "status": "Proposed SMTP configuration; not connected or delivery-tested",
+    "requirements": [
+      "Business account authorization",
+      "Verified sending domain",
+      "Resend API key",
+      "WZ SMTP plan access",
+      "Controlled delivery test"
+    ]
+  },
+  "authenticatedAdminReview": {
+    "date": "2026-10-14",
+    "method": "Playwright CDP, user-authorized open Shopify session",
+    "draftProducts": 3,
+    "retainedActiveDuplicateRecords": 4,
+    "variantLabelSkuPairsCompared": 74,
+    "matchesOctober12": true,
+    "wzDashboard": "1 of 2 complete; Gmail or any SMTP provider; sender connection outstanding",
+    "limitation": "Sender-form follow-up interrupted by CDP connection timeout. No supplier private mapping verification; no fresh variant-ID comparison.",
+    "files": [
+      "admin-product-review.json",
+      "admin-sku-comparison.json"
+    ],
+    "mutations": "None; bulk editor Save disabled"
+  }
+}

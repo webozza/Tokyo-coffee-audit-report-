@@ -1,0 +1,85 @@
+TOKYO NIGHTS COFFEE — SIMPLE NEXT STEPS
+Prepared 14 October 2026. Support/client drafts below have NOT been sent.
+
+WHAT DEVELOPMENT IS LEFT?
+The latest messages identify no new theme feature. Complete the handoff and clarify WZ sender behavior. Supplier mapping, WZ delivery and controlled checkout remain separate dependencies. The original contract is not available here, so you must personally confirm that all agreed development is complete and no additional development fee applies.
+
+1. REVIEW THE UPDATED AUDIT
+Open audit-2026-10-08.html. Review the October 14 section and six handoff confirmations. The October 12 screenshots remain original evidence. The new public checks confirm the published theme and three protected URLs returning 404. A subsequent authenticated October 14 Admin review confirms all three drafts, all four Mint/Honduras records Active, and all 74 displayed variant-label/SKU pairs matching October 12. See chat-1.md.
+
+2. KEEP THE PRODUCTS SAFE
+Do not publish Ginza Velvet, Harajuku Heat or Shibuya Sunrise. Do not edit supplier SKUs, merge/delete Mint or Honduras, change mappings or assume an internal SKU connects a product. The report lists all 74 recorded variant/SKU associations. The Mint pair shares 17 SKU values; the Honduras pair shares 20. Only Dripshipper can settle the duplicate behavior and approved remedy.
+
+3. GET THE REMAINING WZ ANSWERS
+Shopify Admin > Apps > WZ Back In Stock > Open sender email. Inspect only. Record the installed plan and available sender methods. Do not enter credentials or save changes yet.
+Use the app's support route to send the following draft yourself after reviewing it:
+
+Hello WZ Support,
+We need an alternative to Gmail OAuth for an existing WZ installation. Please confirm:
+- Does our installed plan support Manual SMTP, and which template/send-method settings are required?
+- Can we use an authorized business-owned SMTP sender now and switch to another approved sender later while preserving all customer subscriptions, pending alerts, templates, app embed and notification workflows?
+- Does switching trigger queued sends, reset delivery state, or require workflow recreation? Please provide the exact safe switch and rollback procedure.
+- Is a WZ-managed default or temporary sender available? If so, what are the sender identity, authorization requirements, limits and total fees?
+- What app-plan and separate provider charges apply? Is direct store-owner consent mandatory, or may an authorized collaborator configure business-issued SMTP credentials?
+Please do not change our configuration or send customer notifications. We need written confirmation before selecting an option.
+
+The official listing advertises SMTP and Gmail. It does not establish lossless sender switching or a default sender. Do not promise these without support confirmation. Free: 50 alerts/month; Lite: USD 9.99/500; Startup: USD 19.99/1,000; Business: USD 39.99/5,000. Confirm actual billing and Free-plan SMTP eligibility in the installation. Proposed provider: Resend Free, $0 within 100 emails/day and 3,000/month. WZ plan charges and notification limits remain separate.
+Source: https://apps.shopify.com/wz-back-in-stock
+
+4. PROPOSE RESEND FREE BEFORE SETUP
+Resend is a suitable SMTP candidate; this specific WZ integration has not yet been delivery-tested. Its Free allowance is 100 emails per UTC day and 3,000 per month, with both limits applying. Other account sending/inbound usage and multiple recipients consume the quota. Resend does not increase the WZ plan allowance. Confirm WZ retry/queue handling before a restock burst can exceed available quota.
+After owner approval:
+- Use a business-owned Resend account and verify the sending domain/subdomain using Resend's DNS records.
+- Create a sending API key.
+- WZ > Open sender email > Manual SMTP: host smtp.resend.com; port 587 with STARTTLS (or 465 with implicit TLS if WZ requires it); username resend; password is the Resend API key.
+- Set From Address to an authorized address on the verified domain. Keep the key private.
+- Preserve template, embed, subscribers and queues; verify the correct alert send method.
+- Run an approved controlled delivery/restock test before declaring success.
+Gmail OAuth is not needed for this route. Owner approval, DNS/domain access and setup are still needed. No paid upgrade is authorized.
+Sources: https://resend.com/docs/send-with-smtp and https://resend.com/docs/knowledge-base/account-quotas-and-limits
+
+EXPLAIN THE CHOICE BEFORE SETUP
+Tell the client SMTP is an advertised alternative, with preservation/default-sender questions still pending. Share the exact approved provider/plan quote before any purchase or configuration. Use only a client/business-owned sender. Never use your personal mailbox or request the owner's Gmail password. If the owner cannot authorize a sender now, leave WZ delivery as an owner-side dependency and complete unrelated handoff work.
+After approval and WZ confirmation: privately record existing settings and waitlist/pending counts, configure the approved SMTP method using provider-issued credentials, preserve templates/embed/subscriptions, and verify delivery with an approved isolated non-supplier fixture. Never restock a real supplier item or trigger real customer waitlists for a test. A test-send alone does not prove the complete restock workflow.
+
+5. SUPPLIER FOLLOW-UP (DRAFT; CLIENT SAYS CLARIFICATION ALREADY REQUESTED)
+Avoid duplicate support requests if the client's existing thread is active. Add these questions there when appropriate:
+
+Hello Raheel,
+Thank you for clarifying that Dripshipper recognizes supplier-assigned SKUs rather than Shopify product IDs. We are preserving all existing records. Please confirm the approved manual mapping/import procedure for Ginza Velvet, Harajuku Heat and Shibuya Sunrise, including exact supplier products, supported Whole Bean/Ground variants and supplier SKUs. Please also explain recognition and synchronization when two Shopify variants carry the same supplier SKU, and provide the approved duplicate-resolution procedure for the existing Mint/Honduras pairs. Finally, can any Shopify test order sync, incur supplier billing or trigger fulfillment, and what exact procedure guarantees isolation? Please do not change records or process any orders on our behalf.
+
+The supplier's payment-before-processing statement is not test-isolation approval. Retain the original forwarded email privately, including date/ticket reference if available.
+
+6. KEEP CHECKOUT TESTING ON HOLD
+Do not enable payment test mode or create orders now. Keep the documented procedure. Later testing requires explicit owner authorization, approved access/test window and written supplier isolation. No real card, manual-payment workaround or supplier order is authorized.
+
+7. FINISH THE COMMERCIAL AND BACKUP RECORD
+Compare the original agreed scope with the evidence. If accurate, personally confirm: "No additional development work or development charges are required to complete the original agreed scope. The documented external dependencies will be tracked separately. Any optional third-party sender/app cost will be disclosed for approval before proceeding."
+Do not send that commitment until you have checked your agreement. Record the verified existing pre-publication backup ID/name or ZIP location and timestamp for the rollback handoff; the repository currently lacks that reference.
+
+8. PUBLISH THE REPORT UPDATE
+The local files have been updated; the live Vercel URL has NOT been updated by this work.
+If this GitHub repository's main branch is linked to Vercel production:
+- In your Git client, review the changes to audit-2026-10-08.html, index.html, README.md, NEXT-STEPS-2026-10-14.txt and evidence-2026-10-14/.
+- Commit the reviewed update and push main to origin using your normal workflow.
+- In Vercel, open the existing Tokyo coffee audit project and wait for its production deployment to show Ready. If auto-deploy is not connected, use that project's established deployment flow; do not create a replacement project.
+- Open https://tokyocoffeeauditreport.vercel.app/audit-2026-10-08.html and confirm it says 14 October 2026, shows the supplier reply and opens the evidence links.
+- Only then share that same URL with the client.
+
+9. CLIENT REPLY DRAFT — SEND AFTER DEPLOYMENT
+Hi Karlton,
+
+Thank you for forwarding Raheel's clarification. I have updated the audit to record Dripshipper's supplier-SKU matching process and the remaining questions about manual mapping, supported variants, duplicate SKUs and safe test-order isolation.
+
+The published theme remains live, and all three protected product URLs still return 404. The fresh October 14 Admin review confirms the three drafts and all four existing Mint/Honduras records; all 74 displayed variant-label/SKU pairs match the October 12 baseline. I made no product, SKU, mapping, payment or integration changes during this review.
+
+WZ supports SMTP, so I propose a business-owned Resend Free account: $0 within 100 emails/day and 3,000/month. WZ’s own plan limits/charges still apply. This avoids Gmail OAuth but requires an approved account, verified sending domain and a controlled delivery test. Later sender switching and preservation of subscriptions/queued alerts/workflows still require confirmation. No personal account or Gmail password is needed from you for this review. If sender authorization remains unavailable, I will track it separately from the completed development.
+
+Controlled checkout testing remains on hold. No payment test mode or supplier order has been activated.
+
+The updated audit separates verified development from the remaining dependencies and records ownership and next steps:
+https://tokyocoffeeauditreport.vercel.app/audit-2026-10-08.html
+
+[Before sending, replace this line with your verified original-scope/no-additional-development-fee confirmation from step 7. Do not leave this placeholder in the client message.]
+
+Thank you.
